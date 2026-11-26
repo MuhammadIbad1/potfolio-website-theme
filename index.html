@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Muhammad IBAD — Full-Stack Web Developer · Co-Founder, Pixlo.pro</title>
+    <meta name="description" content="I build fast, scalable web apps across PHP, Laravel, JavaScript &amp; Node.js, lead teams at Saylani IT, and co-run Pixlo.pro — a software agency delivering web, branding and SEO.">
+    <meta name="theme-color" content="#0B0610">
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Muhammad IBAD — Full-Stack Web Developer · Co-Founder, Pixlo.pro">
+    <meta property="og:description" content="Full-Stack Web Developer, Lead Manager at Saylani IT, and Co-Founder of Pixlo.pro building fast, scalable web applications.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Muhammad IBAD — Full-Stack Web Developer">
+    <meta name="twitter:description" content="Full-Stack Web Developer, Lead Manager at Saylani IT, and Co-Founder of Pixlo.pro.">
+    <meta name="twitter:image" content="images/og-image.jpg">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap">
+
+    <style>
+/*! tailwindcss v4.3.5 | MIT License | https://tailwindcss.com */
+@layer properties{@supports (((-webkit-hyphens:none)) and (not (margin-trim:block))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))){*,:before,:after,::backdrop{--tw-translate-x:0;--tw-translate-y:0;--tw-translate-z:0;--tw-rotate-x:initial;--tw-rotate-y:initial;--tw-rotate-z:initial;--tw-skew-x:initial;--tw-skew-y:initial;--tw-space-y-reverse:0;--tw-divide-y-reverse:0;--tw-border-style:solid;--tw-gradient-position:initial;--tw-gradient-from:#0000;--tw-gradient-via:#0000;--tw-gradient-to:#0000;--tw-gradient-stops:initial;--tw-gradient-via-stops:initial;--tw-gradient-from-position:0%;--tw-gradient-via-position:50%;--tw-gradient-to-position:100%;--tw-leading:initial;--tw-font-weight:initial;--tw-tracking:initial;--tw-ordinal:initial;--tw-slashed-zero:initial;--tw-numeric-figure:initial;--tw-numeric-spacing:initial;--tw-numeric-fraction:initial;--tw-shadow:0 0 #0000;--tw-shadow-color:initial;--tw-shadow-alpha:100%;--tw-inset-shadow:0 0 #0000;--tw-inset-shadow-color:initial;--tw-inset-shadow-alpha:100%;--tw-ring-color:initial;--tw-ring-shadow:0 0 #0000;--tw-inset-ring-color:initial;--tw-inset-ring-shadow:0 0 #0000;--tw-ring-inset:initial;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-offset-shadow:0 0 #0000;--tw-blur:initial;--tw-brightness:initial;--tw-contrast:initial;--tw-grayscale:initial;--tw-hue-rotate:initial;--tw-invert:initial;--tw-opacity:initial;--tw-saturate:initial;--tw-sepia:initial;--tw-drop-shadow:initial;--tw-drop-shadow-color:initial;--tw-drop-shadow-alpha:100%;--tw-drop-shadow-size:initial;--tw-backdrop-blur:initial;--tw-backdrop-brightness:initial;--tw-backdrop-contrast:initial;--tw-backdrop-grayscale:initial;--tw-backdrop-hue-rotate:initial;--tw-backdrop-invert:initial;--tw-backdrop-opacity:initial;--tw-backdrop-saturate:initial;--tw-backdrop-sepia:initial;--tw-duration:initial;--tw-ease:initial;--tw-scale-x:1;--tw-scale-y:1;--tw-scale-z:1;--tw-content:""}}}@layer theme{:root,:host{--font-sans:"Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;--color-emerald-200:oklch(90.5% .093 164.15);--color-emerald-400:oklch(76.5% .177 163.223);--color-emerald-500:oklch(69.6% .17 162.48);--color-rose-200:oklch(89.2% .058 10.001);--color-rose-400:oklch(71.2% .194 13.428);--color-rose-500:oklch(64.5% .246 16.439);--color-black:#000;--color-white:#fff;--spacing:.25rem;--container-md:28rem;--container-xl:36rem;--container-2xl:42rem;--container-4xl:56rem;--container-7xl:80rem;--text-xs:.75rem;--text-xs--line-height:calc(1 / .75);--text-sm:.875rem;--text-sm--line-height:calc(1.25 / .875);--text-base:1rem;--text-base--line-height:calc(1.5 / 1);--text-lg:1.125rem;--text-lg--line-height:calc(1.75 / 1.125);--text-xl:1.25rem;--text-xl--line-height:calc(1.75 / 1.25);--text-2xl:1.5rem;--text-2xl--line-height:calc(2 / 1.5);--text-3xl:1.875rem;--text-3xl--line-height:calc(2.25 / 1.875);--text-4xl:2.25rem;--text-4xl--line-height:calc(2.5 / 2.25);--text-5xl:3rem;--text-5xl--line-height:1;--text-7xl:4.5rem;--text-7xl--line-height:1;--font-weight-normal:400;--font-weight-medium:500;--font-weight-semibold:600;--font-weight-bold:700;--tracking-tight:-.025em;--tracking-wider:.05em;--tracking-widest:.1em;--leading-relaxed:1.625;--radius-lg:.5rem;--radius-xl:.75rem;--radius-2xl:1rem;--radius-3xl:1.5rem;--ease-out:cubic-bezier(0, 0, .2, 1);--blur-md:12px;--default-transition-duration:.15s;--default-transition-timing-function:cubic-bezier(.4, 0, .2, 1);--default-font-family:var(--font-sans);--default-mono-font-family:var(--font-mono);--font-display:"Sora", "Inter", ui-sans-serif, system-ui, sans-serif;--font-serif-accent:"Instrument Serif", Georgia, serif}}@layer base{*,:after,:before,::backdrop{box-sizing:border-box;border:0 solid;margin:0;padding:0}::file-selector-button{box-sizing:border-box;border:0 solid;margin:0;padding:0}html,:host{-webkit-text-size-adjust:100%;tab-size:4;line-height:1.5;font-family:var(--default-font-family,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");font-feature-settings:var(--default-font-feature-settings,normal);font-variation-settings:var(--default-font-variation-settings,normal);-webkit-tap-highlight-color:transparent}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:var(--default-mono-font-family,ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);font-feature-settings:var(--default-mono-font-feature-settings,normal);font-variation-settings:var(--default-mono-font-variation-settings,normal);font-size:1em}small{font-size:80%}sub,sup{vertical-align:baseline;font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}:-moz-focusring:where(:not(iframe)){outline:auto}progress{vertical-align:baseline}summary{display:list-item}ol,ul,menu{list-style:none}img,svg,video,canvas,audio,iframe,embed,object{vertical-align:middle;display:block}img,video{max-width:100%;height:auto}button,input,select,optgroup,textarea{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}::file-selector-button{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}:where(select:is([multiple],[size])) optgroup{font-weight:bolder}:where(select:is([multiple],[size])) optgroup option{padding-inline-start:20px}::file-selector-button{margin-inline-end:4px}::placeholder{opacity:1}@supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px){::placeholder{color:currentColor}@supports (color:color-mix(in lab, red, red)){::placeholder{color:color-mix(in oklab, currentcolor 50%, transparent)}}}textarea{resize:vertical}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-date-and-time-value{min-height:1lh;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-datetime-edit{padding-block:0}::-webkit-datetime-edit-year-field{padding-block:0}::-webkit-datetime-edit-month-field{padding-block:0}::-webkit-datetime-edit-day-field{padding-block:0}::-webkit-datetime-edit-hour-field{padding-block:0}::-webkit-datetime-edit-minute-field{padding-block:0}::-webkit-datetime-edit-second-field{padding-block:0}::-webkit-datetime-edit-millisecond-field{padding-block:0}::-webkit-datetime-edit-meridiem-field{padding-block:0}::-webkit-calendar-picker-indicator{line-height:1}:-moz-ui-invalid{box-shadow:none}button,input:where([type=button],[type=reset],[type=submit]){appearance:button}::file-selector-button{appearance:button}::-webkit-inner-spin-button{height:auto}::-webkit-outer-spin-button{height:auto}[hidden]:where(:not([hidden=until-found])){display:none!important}}@layer components;@layer utilities{.pointer-events-none{pointer-events:none}.absolute{position:absolute}.fixed{position:fixed}.relative{position:relative}.static{position:static}.inset-0{inset:0}.inset-x-0{inset-inline:0}.top-0{top:0}.top-1\/2{top:50%}.top-3{top:calc(var(--spacing) * 3)}.top-7{top:calc(var(--spacing) * 7)}.right-5{right:calc(var(--spacing) * 5)}.bottom-3{bottom:calc(var(--spacing) * 3)}.bottom-4{bottom:calc(var(--spacing) * 4)}.left-1\/2{left:50%}.left-3{left:calc(var(--spacing) * 3)}.left-4{left:calc(var(--spacing) * 4)}.z-10{z-index:10}.z-20{z-index:20}.z-30{z-index:30}.z-50{z-index:50}.z-\[9990\]{z-index:9990}.z-\[9995\]{z-index:9995}.order-1{order:1}.order-2{order:2}.mx-auto{margin-inline:auto}.mt-0\.5{margin-top:calc(var(--spacing) * .5)}.mt-1{margin-top:var(--spacing)}.mt-1\.5{margin-top:calc(var(--spacing) * 1.5)}.mt-2{margin-top:calc(var(--spacing) * 2)}.mt-3{margin-top:calc(var(--spacing) * 3)}.mt-4{margin-top:calc(var(--spacing) * 4)}.mt-5{margin-top:calc(var(--spacing) * 5)}.mt-6{margin-top:calc(var(--spacing) * 6)}.mt-7{margin-top:calc(var(--spacing) * 7)}.mt-8{margin-top:calc(var(--spacing) * 8)}.mt-12{margin-top:calc(var(--spacing) * 12)}.mt-14{margin-top:calc(var(--spacing) * 14)}.mt-20{margin-top:calc(var(--spacing) * 20)}.mb-6{margin-bottom:calc(var(--spacing) * 6)}.ml-10{margin-left:calc(var(--spacing) * 10)}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.inline-flex{display:inline-flex}.aspect-\[5\/4\]{aspect-ratio:5/4}.aspect-\[16\/10\]{aspect-ratio:16/10}.h-1{height:var(--spacing)}.h-1\.5{height:calc(var(--spacing) * 1.5)}.h-2{height:calc(var(--spacing) * 2)}.h-3{height:calc(var(--spacing) * 3)}.h-4{height:calc(var(--spacing) * 4)}.h-5{height:calc(var(--spacing) * 5)}.h-7{height:calc(var(--spacing) * 7)}.h-8{height:calc(var(--spacing) * 8)}.h-10{height:calc(var(--spacing) * 10)}.h-11{height:calc(var(--spacing) * 11)}.h-52{height:calc(var(--spacing) * 52)}.h-\[320px\]{height:320px}.h-full{height:100%}.max-h-\[38dvh\]{max-height:38dvh}.max-h-\[90vh\]{max-height:90vh}.min-h-\[46px\]{min-height:46px}.min-h-\[100dvh\]{min-height:100dvh}.w-0{width:0}.w-1\.5{width:calc(var(--spacing) * 1.5)}.w-2{width:calc(var(--spacing) * 2)}.w-3{width:calc(var(--spacing) * 3)}.w-4{width:calc(var(--spacing) * 4)}.w-5{width:calc(var(--spacing) * 5)}.w-7{width:calc(var(--spacing) * 7)}.w-8{width:calc(var(--spacing) * 8)}.w-10{width:calc(var(--spacing) * 10)}.w-11{width:calc(var(--spacing) * 11)}.w-44{width:calc(var(--spacing) * 44)}.w-auto{width:auto}.w-full{width:100%}.w-max{width:max-content}.max-w-2xl{max-width:var(--container-2xl)}.max-w-4xl{max-width:var(--container-4xl)}.max-w-7xl{max-width:var(--container-7xl)}.max-w-md{max-width:var(--container-md)}.max-w-xl{max-width:var(--container-xl)}.flex-1{flex:1}.shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:calc(calc(1 / 2 * 100%) * -1);translate:var(--tw-translate-x) var(--tw-translate-y)}.transform{transform:var(--tw-rotate-x, ) var(--tw-rotate-y, ) var(--tw-rotate-z, ) var(--tw-skew-x, ) var(--tw-skew-y, )}.resize{resize:both}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.items-end{align-items:flex-end}.items-start{align-items:flex-start}.justify-between{justify-content:space-between}.justify-center{justify-content:center}.gap-1{gap:var(--spacing)}.gap-1\.5{gap:calc(var(--spacing) * 1.5)}.gap-2{gap:calc(var(--spacing) * 2)}.gap-2\.5{gap:calc(var(--spacing) * 2.5)}.gap-3{gap:calc(var(--spacing) * 3)}.gap-4{gap:calc(var(--spacing) * 4)}.gap-5{gap:calc(var(--spacing) * 5)}.gap-6{gap:calc(var(--spacing) * 6)}.gap-7{gap:calc(var(--spacing) * 7)}.gap-10{gap:calc(var(--spacing) * 10)}.gap-12{gap:calc(var(--spacing) * 12)}:where(.space-y-2>:not(:last-child)){--tw-space-y-reverse:0;margin-block-start:calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));margin-block-end:calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)))}:where(.space-y-3>:not(:last-child)){--tw-space-y-reverse:0;margin-block-start:calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));margin-block-end:calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)))}:where(.space-y-4>:not(:last-child)){--tw-space-y-reverse:0;margin-block-start:calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));margin-block-end:calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)))}:where(.space-y-6>:not(:last-child)){--tw-space-y-reverse:0;margin-block-start:calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));margin-block-end:calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)))}:where(.divide-y>:not(:last-child)){--tw-divide-y-reverse:0;border-bottom-style:var(--tw-border-style);border-top-style:var(--tw-border-style);border-top-width:calc(1px * var(--tw-divide-y-reverse));border-bottom-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)))}:where(.divide-white\/10>:not(:last-child)){border-color:#ffffff1a}@supports (color:color-mix(in lab, red, red)){:where(.divide-white\/10>:not(:last-child)){border-color:color-mix(in oklab, var(--color-white) 10%, transparent)}}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.rounded-2xl{border-radius:var(--radius-2xl)}.rounded-3xl{border-radius:var(--radius-3xl)}.rounded-\[1\.5rem\]{border-radius:1.5rem}.rounded-\[2rem\]{border-radius:2rem}.rounded-full{border-radius:2147483647px}.rounded-lg{border-radius:var(--radius-lg)}.rounded-xl{border-radius:var(--radius-xl)}.border{border-style:var(--tw-border-style);border-width:1px}.border-2{border-style:var(--tw-border-style);border-width:2px}.border-y{border-block-style:var(--tw-border-style);border-block-width:1px}.border-t{border-top-style:var(--tw-border-style);border-top-width:1px}.border-\[\#0B0610\]{border-color:#0b0610}.border-\[\#C21A6E\]\/40{border-color:oklab(53.8096% .205724 -.00789422/.4)}.border-\[\#FF5A1F\]\/40{border-color:oklab(68.2353% .166767 .128881/.4)}.border-\[\#FF5A1F\]\/50{border-color:oklab(68.2353% .166767 .128881/.5)}.border-emerald-400\/35{border-color:#00d29459}@supports (color:color-mix(in lab, red, red)){.border-emerald-400\/35{border-color:color-mix(in oklab, var(--color-emerald-400) 35%, transparent)}}.border-rose-400\/35{border-color:#ff667f59}@supports (color:color-mix(in lab, red, red)){.border-rose-400\/35{border-color:color-mix(in oklab, var(--color-rose-400) 35%, transparent)}}.border-white\/10{border-color:#ffffff1a}@supports (color:color-mix(in lab, red, red)){.border-white\/10{border-color:color-mix(in oklab, var(--color-white) 10%, transparent)}}.border-white\/12{border-color:#ffffff1f}@supports (color:color-mix(in lab, red, red)){.border-white\/12{border-color:color-mix(in oklab, var(--color-white) 12%, transparent)}}.border-white\/15{border-color:#ffffff26}@supports (color:color-mix(in lab, red, red)){.border-white\/15{border-color:color-mix(in oklab, var(--color-white) 15%, transparent)}}.bg-\[\#0B0610\]{background-color:#0b0610}.bg-\[\#0B0610\]\/70{background-color:oklab(13.6159% .0148981 -.0192578/.7)}.bg-\[\#0B0610\]\/80{background-color:oklab(13.6159% .0148981 -.0192578/.8)}.bg-\[\#0B0610\]\/90{background-color:oklab(13.6159% .0148981 -.0192578/.9)}.bg-\[\#150B1D\]{background-color:#150b1d}.bg-\[\#150B1D\]\/50{background-color:oklab(17.3706% .0240604 -.0302606/.5)}.bg-\[\#150B1D\]\/85{background-color:oklab(17.3706% .0240604 -.0302606/.85)}.bg-\[\#C21A6E\]{background-color:#c21a6e}.bg-\[\#C21A6E\]\/15{background-color:oklab(53.8096% .205724 -.00789422/.15)}.bg-\[\#FF5A1F\]{background-color:#ff5a1f}.bg-\[\#FF5A1F\]\/15{background-color:oklab(68.2353% .166767 .128881/.15)}.bg-black\/80{background-color:#000c}@supports (color:color-mix(in lab, red, red)){.bg-black\/80{background-color:color-mix(in oklab, var(--color-black) 80%, transparent)}}.bg-emerald-400{background-color:var(--color-emerald-400)}.bg-emerald-500\/15{background-color:#00bb7f26}@supports (color:color-mix(in lab, red, red)){.bg-emerald-500\/15{background-color:color-mix(in oklab, var(--color-emerald-500) 15%, transparent)}}.bg-rose-500\/15{background-color:#ff235726}@supports (color:color-mix(in lab, red, red)){.bg-rose-500\/15{background-color:color-mix(in oklab, var(--color-rose-500) 15%, transparent)}}.bg-white\/5{background-color:#ffffff0d}@supports (color:color-mix(in lab, red, red)){.bg-white\/5{background-color:color-mix(in oklab, var(--color-white) 5%, transparent)}}.bg-white\/10{background-color:#ffffff1a}@supports (color:color-mix(in lab, red, red)){.bg-white\/10{background-color:color-mix(in oklab, var(--color-white) 10%, transparent)}}.bg-gradient-to-r{--tw-gradient-position:to right in oklab;background-image:linear-gradient(var(--tw-gradient-stops))}.from-\[\#C21A6E\]{--tw-gradient-from:#c21a6e;--tw-gradient-stops:var(--tw-gradient-via-stops,var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position))}.via-\[\#F0475A\]{--tw-gradient-via:#f0475a;--tw-gradient-via-stops:var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-via-stops)}.to-\[\#FF5A1F\]{--tw-gradient-to:#ff5a1f;--tw-gradient-stops:var(--tw-gradient-via-stops,var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position))}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.object-bottom{object-position:bottom}.object-top{object-position:top}.p-2{padding:calc(var(--spacing) * 2)}.p-3{padding:calc(var(--spacing) * 3)}.p-4{padding:calc(var(--spacing) * 4)}.p-5{padding:calc(var(--spacing) * 5)}.p-6{padding:calc(var(--spacing) * 6)}.p-7{padding:calc(var(--spacing) * 7)}.px-2{padding-inline:calc(var(--spacing) * 2)}.px-2\.5{padding-inline:calc(var(--spacing) * 2.5)}.px-3{padding-inline:calc(var(--spacing) * 3)}.px-3\.5{padding-inline:calc(var(--spacing) * 3.5)}.px-4{padding-inline:calc(var(--spacing) * 4)}.py-0\.5{padding-block:calc(var(--spacing) * .5)}.py-1{padding-block:var(--spacing)}.py-1\.5{padding-block:calc(var(--spacing) * 1.5)}.py-2{padding-block:calc(var(--spacing) * 2)}.py-3{padding-block:calc(var(--spacing) * 3)}.py-3\.5{padding-block:calc(var(--spacing) * 3.5)}.py-10{padding-block:calc(var(--spacing) * 10)}.py-20{padding-block:calc(var(--spacing) * 20)}.py-24{padding-block:calc(var(--spacing) * 24)}.pt-3\.5{padding-top:calc(var(--spacing) * 3.5)}.pt-4{padding-top:calc(var(--spacing) * 4)}.pt-5{padding-top:calc(var(--spacing) * 5)}.pt-6{padding-top:calc(var(--spacing) * 6)}.pt-20{padding-top:calc(var(--spacing) * 20)}.pb-0{padding-bottom:0}.pb-1{padding-bottom:var(--spacing)}.pb-4{padding-bottom:calc(var(--spacing) * 4)}.text-left{text-align:left}.font-display{font-family:var(--font-display)}.font-serif-accent{font-family:var(--font-serif-accent)}.text-2xl{font-size:var(--text-2xl);line-height:var(--tw-leading,var(--text-2xl--line-height))}.text-3xl{font-size:var(--text-3xl);line-height:var(--tw-leading,var(--text-3xl--line-height))}.text-5xl{font-size:var(--text-5xl);line-height:var(--tw-leading,var(--text-5xl--line-height))}.text-base{font-size:var(--text-base);line-height:var(--tw-leading,var(--text-base--line-height))}.text-lg{font-size:var(--text-lg);line-height:var(--tw-leading,var(--text-lg--line-height))}.text-sm{font-size:var(--text-sm);line-height:var(--tw-leading,var(--text-sm--line-height))}.text-xl{font-size:var(--text-xl);line-height:var(--tw-leading,var(--text-xl--line-height))}.text-xs{font-size:var(--text-xs);line-height:var(--tw-leading,var(--text-xs--line-height))}.text-\[0\.74em\]{font-size:.74em}.text-\[11px\]{font-size:11px}.leading-relaxed{--tw-leading:var(--leading-relaxed);line-height:var(--leading-relaxed)}.font-bold{--tw-font-weight:var(--font-weight-bold);font-weight:var(--font-weight-bold)}.font-medium{--tw-font-weight:var(--font-weight-medium);font-weight:var(--font-weight-medium)}.font-normal{--tw-font-weight:var(--font-weight-normal);font-weight:var(--font-weight-normal)}.font-semibold{--tw-font-weight:var(--font-weight-semibold);font-weight:var(--font-weight-semibold)}.tracking-\[0\.22em\]{--tw-tracking:.22em;letter-spacing:.22em}.tracking-\[0\.25em\]{--tw-tracking:.25em;letter-spacing:.25em}.tracking-tight{--tw-tracking:var(--tracking-tight);letter-spacing:var(--tracking-tight)}.tracking-wider{--tw-tracking:var(--tracking-wider);letter-spacing:var(--tracking-wider)}.tracking-widest{--tw-tracking:var(--tracking-widest);letter-spacing:var(--tracking-widest)}.whitespace-nowrap{white-space:nowrap}.whitespace-pre-line{white-space:pre-line}.text-\[\#0B0610\]{color:#0b0610}.text-\[\#B7A9C4\]{color:#b7a9c4}.text-\[\#B7A9C4\]\/70{color:oklab(75.5266% .0256445 -.0320864/.7)}.text-\[\#E4D8EE\]{color:#e4d8ee}.text-\[\#F6F1F8\]{color:#f6f1f8}.text-\[\#F6F1F8\]\/90{color:oklab(96.3994% .00772893 -.00733662/.9)}.text-\[\#F6F1F8\]\/95{color:oklab(96.3994% .00772893 -.00733662/.95)}.text-\[\#F0475A\]{color:#f0475a}.text-\[\#FF5A1F\]{color:#ff5a1f}.text-emerald-200{color:var(--color-emerald-200)}.text-emerald-400{color:var(--color-emerald-400)}.text-rose-200{color:var(--color-rose-200)}.text-white{color:var(--color-white)}.uppercase{text-transform:uppercase}.tabular-nums{--tw-numeric-spacing:tabular-nums;font-variant-numeric:var(--tw-ordinal, ) var(--tw-slashed-zero, ) var(--tw-numeric-figure, ) var(--tw-numeric-spacing, ) var(--tw-numeric-fraction, )}.underline-offset-4{text-underline-offset:4px}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-95{opacity:.95}.shadow-\[0_0_16px_\#FF5A1F\]{--tw-shadow:0 0 16px var(--tw-shadow-color,#ff5a1f);box-shadow:var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px var(--tw-shadow-color,#0000001a), 0 4px 6px -4px var(--tw-shadow-color,#0000001a);box-shadow:var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 3px 0 var(--tw-shadow-color,#0000001a), 0 1px 2px -1px var(--tw-shadow-color,#0000001a);box-shadow:var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}.ring,.ring-1{--tw-ring-shadow:var(--tw-ring-inset, ) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color,currentcolor);box-shadow:var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}.ring-\[\#FF5A1F\]\/25{--tw-ring-color:oklab(68.2353% .166767 .128881/.25)}.drop-shadow-\[0_24px_60px_rgba\(11\,6\,16\,0\.85\)\]{--tw-drop-shadow-size:drop-shadow(0 24px 60px var(--tw-drop-shadow-color,#0b0610d9));--tw-drop-shadow:var(--tw-drop-shadow-size);filter:var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, )}.filter{filter:var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, )}.backdrop-blur{--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );backdrop-filter:var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, )}.backdrop-blur-md{--tw-backdrop-blur:blur(var(--blur-md));-webkit-backdrop-filter:var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );backdrop-filter:var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, )}.transition{transition-property:color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,--tw-gradient-from,--tw-gradient-via,--tw-gradient-to,opacity,box-shadow,transform,translate,scale,rotate,filter,-webkit-backdrop-filter,backdrop-filter,display,content-visibility,overlay,pointer-events;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}.transition-colors{transition-property:color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,--tw-gradient-from,--tw-gradient-via,--tw-gradient-to;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}.transition-transform{transition-property:transform,translate,scale,rotate;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}.duration-150{--tw-duration:.15s;transition-duration:.15s}.duration-300{--tw-duration:.3s;transition-duration:.3s}.duration-700{--tw-duration:.7s;transition-duration:.7s}.ease-out{--tw-ease:var(--ease-out);transition-timing-function:var(--ease-out)}.will-change-transform{will-change:transform}.select-none{-webkit-user-select:none;user-select:none}@media (hover:hover){:is(:where(.group):hover .group-hover\:translate-x-1){--tw-translate-x:var(--spacing);translate:var(--tw-translate-x) var(--tw-translate-y)}:is(:where(.group):hover .group-hover\:scale-105){--tw-scale-x:105%;--tw-scale-y:105%;--tw-scale-z:105%;scale:var(--tw-scale-x) var(--tw-scale-y)}:is(:where(.group):hover .group-hover\:text-\[\#FF5A1F\]){color:#ff5a1f}}.selection\:bg-\[\#FF5A1F\] ::selection{background-color:#ff5a1f}.selection\:bg-\[\#FF5A1F\]::selection{background-color:#ff5a1f}.selection\:text-\[\#0B0610\] ::selection{color:#0b0610}.selection\:text-\[\#0B0610\]::selection{color:#0b0610}.placeholder\:text-white\/30::placeholder{color:#ffffff4d}@supports (color:color-mix(in lab, red, red)){.placeholder\:text-white\/30::placeholder{color:color-mix(in oklab, var(--color-white) 30%, transparent)}}.before\:absolute:before{content:var(--tw-content);position:absolute}.before\:top-2:before{content:var(--tw-content);top:calc(var(--spacing) * 2)}.before\:bottom-2:before{content:var(--tw-content);bottom:calc(var(--spacing) * 2)}.before\:left-4:before{content:var(--tw-content);left:calc(var(--spacing) * 4)}.before\:w-px:before{content:var(--tw-content);width:1px}.before\:bg-gradient-to-b:before{content:var(--tw-content);--tw-gradient-position:to bottom in oklab;background-image:linear-gradient(var(--tw-gradient-stops))}.before\:from-\[\#FF5A1F\]:before{content:var(--tw-content);--tw-gradient-from:#ff5a1f;--tw-gradient-stops:var(--tw-gradient-via-stops,var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position))}.before\:via-\[\#C21A6E\]:before{content:var(--tw-content);--tw-gradient-via:#c21a6e;--tw-gradient-via-stops:var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-via-stops)}.before\:to-transparent:before{content:var(--tw-content);--tw-gradient-to:transparent;--tw-gradient-stops:var(--tw-gradient-via-stops,var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position))}.first\:pt-0:first-child{padding-top:0}.last\:pb-0:last-child{padding-bottom:0}@media (hover:hover){.hover\:border-\[\#FF5A1F\]:hover{border-color:#ff5a1f}.hover\:border-\[\#FF5A1F\]\/50:hover{border-color:oklab(68.2353% .166767 .128881/.5)}.hover\:border-white\/35:hover{border-color:#ffffff59}@supports (color:color-mix(in lab, red, red)){.hover\:border-white\/35:hover{border-color:color-mix(in oklab, var(--color-white) 35%, transparent)}}.hover\:bg-white\/10:hover{background-color:#ffffff1a}@supports (color:color-mix(in lab, red, red)){.hover\:bg-white\/10:hover{background-color:color-mix(in oklab, var(--color-white) 10%, transparent)}}.hover\:text-\[\#FF5A1F\]:hover{color:#ff5a1f}.hover\:text-white:hover{color:var(--color-white)}.hover\:underline:hover{text-decoration-line:underline}}.focus\:border-\[\#FF5A1F\]:focus{border-color:#ff5a1f}.focus\:outline-none:focus{--tw-outline-style:none;outline-style:none}@media (width>=40rem){.sm\:inline-flex{display:inline-flex}.sm\:h-\[400px\]{height:400px}.sm\:max-h-\[44dvh\]{max-height:44dvh}.sm\:w-64{width:calc(var(--spacing) * 64)}.sm\:w-auto{width:auto}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.sm\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:gap-5{gap:calc(var(--spacing) * 5)}.sm\:p-6{padding:calc(var(--spacing) * 6)}.sm\:p-7{padding:calc(var(--spacing) * 7)}.sm\:p-8{padding:calc(var(--spacing) * 8)}.sm\:p-9{padding:calc(var(--spacing) * 9)}.sm\:p-10{padding:calc(var(--spacing) * 10)}.sm\:px-6{padding-inline:calc(var(--spacing) * 6)}.sm\:py-14{padding-block:calc(var(--spacing) * 14)}.sm\:py-28{padding-block:calc(var(--spacing) * 28)}.sm\:py-32{padding-block:calc(var(--spacing) * 32)}.sm\:pt-4{padding-top:calc(var(--spacing) * 4)}.sm\:pt-24{padding-top:calc(var(--spacing) * 24)}.sm\:text-3xl{font-size:var(--text-3xl);line-height:var(--tw-leading,var(--text-3xl--line-height))}.sm\:text-4xl{font-size:var(--text-4xl);line-height:var(--tw-leading,var(--text-4xl--line-height))}.sm\:text-5xl{font-size:var(--text-5xl);line-height:var(--tw-leading,var(--text-5xl--line-height))}.sm\:text-7xl{font-size:var(--text-7xl);line-height:var(--tw-leading,var(--text-7xl--line-height))}.sm\:text-base{font-size:var(--text-base);line-height:var(--tw-leading,var(--text-base--line-height))}.sm\:text-lg{font-size:var(--text-lg);line-height:var(--tw-leading,var(--text-lg--line-height))}.sm\:text-sm{font-size:var(--text-sm);line-height:var(--tw-leading,var(--text-sm--line-height))}.sm\:text-xl{font-size:var(--text-xl);line-height:var(--tw-leading,var(--text-xl--line-height))}}@media (width>=48rem){.md\:left-1\/2{left:50%}.md\:ml-0{margin-left:0}.md\:flex{display:flex}.md\:hidden{display:none}.md\:w-\[46\%\]{width:46%}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:flex-row{flex-direction:row}.md\:justify-end{justify-content:flex-end}.md\:justify-start{justify-content:flex-start}.md\:before\:left-1\/2:before{content:var(--tw-content);left:50%}}@media (width>=64rem){.lg\:absolute{position:absolute}.lg\:inset-x-0{inset-inline:0}.lg\:bottom-0{bottom:0}.lg\:order-none{order:0}.lg\:col-span-2{grid-column:span 2/span 2}.lg\:col-span-4{grid-column:span 4/span 4}.lg\:col-span-5{grid-column:span 5/span 5}.lg\:col-span-7{grid-column:span 7/span 7}.lg\:col-start-9{grid-column-start:9}.lg\:my-auto{margin-block:auto}.lg\:mt-0{margin-top:0}.lg\:h-\[460px\]{height:460px}.lg\:max-h-\[76dvh\]{max-height:76dvh}.lg\:min-h-\[100dvh\]{min-height:100dvh}.lg\:-translate-x-3{--tw-translate-x:calc(var(--spacing) * -3);translate:var(--tw-translate-x) var(--tw-translate-y)}.lg\:translate-x-2{--tw-translate-x:calc(var(--spacing) * 2);translate:var(--tw-translate-x) var(--tw-translate-y)}.lg\:grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.lg\:grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.lg\:flex-row{flex-direction:row}.lg\:items-end{align-items:flex-end}.lg\:gap-6{gap:calc(var(--spacing) * 6)}.lg\:px-10{padding-inline:calc(var(--spacing) * 10)}.lg\:py-4{padding-block:calc(var(--spacing) * 4)}.lg\:pb-0{padding-bottom:0}.lg\:pb-7{padding-bottom:calc(var(--spacing) * 7)}}@media (width>=80rem){.xl\:text-lg{font-size:var(--text-lg);line-height:var(--tw-leading,var(--text-lg--line-height))}}}:root{--bg:#0b0610;--surface:#150b1d;--surface-elevated:#1e1029;--burgundy:#5b0f3d;--magenta:#c21a6e;--coral:#f0475a;--accent:#ff5a1f;--text:#f6f1f8;--muted:#b7a9c4;--border:#ffffff1f;--ease-expo:cubic-bezier(.22, 1, .36, 1)}html{background-color:var(--bg);color:var(--text);font-family:var(--font-sans);scroll-behavior:auto;overflow-x:clip}body{background-color:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;line-height:1.6;overflow-x:clip}:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}.skip-link{z-index:9999;background:var(--accent);color:#0b0610;border-radius:999px;padding:10px 18px;font-weight:700;transition:top .2s;position:fixed;top:-100px;left:16px}.skip-link:focus{top:16px}.font-display{font-family:var(--font-display)}.font-serif-accent{font-family:var(--font-serif-accent);font-style:italic;font-weight:400}.hero-h1{font-family:var(--font-display);letter-spacing:-.03em;font-size:clamp(2.25rem,5.4vw,5.5rem);font-weight:700;line-height:.96}.hero-gradient{background:radial-gradient(circle at 74% 38%,#f0475a42 0%,#c21a6e29 34%,#0000 62%),radial-gradient(circle at 18% 82%,#c21a6e38 0%,#5b0f3d24 38%,#0000 65%),linear-gradient(130deg,#0b0610 0%,#1c061b 38%,#470c31 70%,#8e1452 90%,#b8264a 100%)}.film-grain{opacity:.035;pointer-events:none;background-image:url(images/bg-noise.png);background-repeat:repeat;background-size:256px 256px}.hero-vignette{pointer-events:none;background:radial-gradient(circle at 50% 45%,#0000 35%,#0b0610b8 100%)}.glass-nav{-webkit-backdrop-filter:blur(18px)saturate(150%);border:1px solid var(--border);background:#150b1d9e;box-shadow:0 12px 40px #00000059}.glass-card{-webkit-backdrop-filter:blur(16px)saturate(140%);border:1px solid var(--border);background:linear-gradient(155deg,#ffffff12 0%,#150b1dc7 100%);box-shadow:0 18px 50px #00000059}@supports not ((-webkit-backdrop-filter:blur(1px)) or (backdrop-filter:blur(1px))){.glass-nav,.glass-card{background:#150b1df0}}.btn-accent{color:#0b0610;min-height:46px;transition:transform .25s var(--ease-expo), background-color .25s ease, box-shadow .25s ease;background:#f6f1f8;border-radius:9999px;align-items:center;gap:.75rem;padding:.45rem .5rem .45rem 1.25rem;font-size:.9375rem;font-weight:600;display:inline-flex;box-shadow:0 10px 28px #ff5a1f33}.btn-accent:hover{background:#fff;transform:translateY(-2px);box-shadow:0 14px 34px #ff5a1f52}.btn-accent .btn-arrow-circle{background:var(--accent);color:#fff;width:34px;height:34px;transition:transform .25s var(--ease-expo);border-radius:9999px;justify-content:center;align-items:center;display:inline-flex}.btn-accent:hover .btn-arrow-circle{transform:translate(2px)rotate(-18deg)}.btn-orange{background:var(--accent);color:#0b0610;min-height:46px;transition:transform .25s var(--ease-expo), filter .2s ease, box-shadow .25s ease;border-radius:9999px;justify-content:center;align-items:center;gap:.65rem;padding:.7rem 1.4rem;font-size:.9375rem;font-weight:700;display:inline-flex}.btn-orange:hover{filter:brightness(1.07);transform:translateY(-2px);box-shadow:0 12px 30px #ff5a1f5c}.btn-ghost{min-height:46px;color:var(--text);transition:transform .25s var(--ease-expo), border-color .2s ease, background-color .2s ease;background:#ffffff0a;border:1px solid #fff3;border-radius:9999px;justify-content:center;align-items:center;gap:.55rem;padding:.7rem 1.35rem;font-size:.9375rem;font-weight:500;display:inline-flex}.btn-ghost:hover{background:#ffffff17;border-color:#ffffff6b;transform:translateY(-2px)}.tilt-card{transform-style:preserve-3d;transition:transform .35s var(--ease-expo), border-color .25s ease;--mx:50%;--my:50%;position:relative}.tilt-card:before{content:"";border-radius:inherit;background:radial-gradient(360px circle at var(--mx) var(--my), #f0475a29, transparent 60%);opacity:0;pointer-events:none;transition:opacity .25s;position:absolute;inset:0}.tilt-card:hover:before{opacity:1}.tilt-card:hover{border-color:#f0475a6b}.masked-divider-word{font-family:var(--font-display);letter-spacing:-.04em;text-transform:uppercase;white-space:nowrap;background-blend-mode:screen;color:#0000;-webkit-text-stroke:1px #ffffff3d;background-image:linear-gradient(90deg,#f6f1f8f2,#f0475ae6,#ff5a1feb),url(images/project-educore.jpg);background-position:50%;background-size:cover;-webkit-background-clip:text;background-clip:text;font-size:clamp(3.4rem,11vw,9.5rem);font-weight:700;line-height:.95}.custom-cursor-dot,.custom-cursor-ring{pointer-events:none;z-index:9998;border-radius:9999px;transition:width .2s,height .2s,background-color .2s,border-color .2s,opacity .2s;position:fixed;top:0;left:0;transform:translate(-100px,-100px)}.custom-cursor-dot{background:var(--accent);width:8px;height:8px;margin-top:-4px;margin-left:-4px}.custom-cursor-ring{border:1.5px solid #f6f1f88c;width:34px;height:34px;margin-top:-17px;margin-left:-17px}.custom-cursor-ring.is-hover{border-color:var(--accent);background:#ff5a1f14;width:54px;height:54px;margin-top:-27px;margin-left:-27px}@media (pointer:coarse),(prefers-reduced-motion:reduce){.custom-cursor-dot,.custom-cursor-ring{display:none!important}}@keyframes floatCard{0%,to{transform:translateY(0)}50%{transform:translateY(-6px)}}.hero-exp-float{animation:6s ease-in-out infinite floatCard}.hero-exp-float-delay{animation:6.5s ease-in-out 1.4s infinite floatCard}@media (prefers-reduced-motion:reduce){*,:before,:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}[data-reveal]{opacity:1!important;filter:none!important;transform:none!important}}@property --tw-translate-x{syntax:"*";inherits:false;initial-value:0}@property --tw-translate-y{syntax:"*";inherits:false;initial-value:0}@property --tw-translate-z{syntax:"*";inherits:false;initial-value:0}@property --tw-rotate-x{syntax:"*";inherits:false}@property --tw-rotate-y{syntax:"*";inherits:false}@property --tw-rotate-z{syntax:"*";inherits:false}@property --tw-skew-x{syntax:"*";inherits:false}@property --tw-skew-y{syntax:"*";inherits:false}@property --tw-space-y-reverse{syntax:"*";inherits:false;initial-value:0}@property --tw-divide-y-reverse{syntax:"*";inherits:false;initial-value:0}@property --tw-border-style{syntax:"*";inherits:false;initial-value:solid}@property --tw-gradient-position{syntax:"*";inherits:false}@property --tw-gradient-from{syntax:"<color>";inherits:false;initial-value:#0000}@property --tw-gradient-via{syntax:"<color>";inherits:false;initial-value:#0000}@property --tw-gradient-to{syntax:"<color>";inherits:false;initial-value:#0000}@property --tw-gradient-stops{syntax:"*";inherits:false}@property --tw-gradient-via-stops{syntax:"*";inherits:false}@property --tw-gradient-from-position{syntax:"<length-percentage>";inherits:false;initial-value:0%}@property --tw-gradient-via-position{syntax:"<length-percentage>";inherits:false;initial-value:50%}@property --tw-gradient-to-position{syntax:"<length-percentage>";inherits:false;initial-value:100%}@property --tw-leading{syntax:"*";inherits:false}@property --tw-font-weight{syntax:"*";inherits:false}@property --tw-tracking{syntax:"*";inherits:false}@property --tw-ordinal{syntax:"*";inherits:false}@property --tw-slashed-zero{syntax:"*";inherits:false}@property --tw-numeric-figure{syntax:"*";inherits:false}@property --tw-numeric-spacing{syntax:"*";inherits:false}@property --tw-numeric-fraction{syntax:"*";inherits:false}@property --tw-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-shadow-color{syntax:"*";inherits:false}@property --tw-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%}@property --tw-inset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-inset-shadow-color{syntax:"*";inherits:false}@property --tw-inset-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%}@property --tw-ring-color{syntax:"*";inherits:false}@property --tw-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-inset-ring-color{syntax:"*";inherits:false}@property --tw-inset-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-ring-inset{syntax:"*";inherits:false}@property --tw-ring-offset-width{syntax:"<length>";inherits:false;initial-value:0}@property --tw-ring-offset-color{syntax:"*";inherits:false;initial-value:#fff}@property --tw-ring-offset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-blur{syntax:"*";inherits:false}@property --tw-brightness{syntax:"*";inherits:false}@property --tw-contrast{syntax:"*";inherits:false}@property --tw-grayscale{syntax:"*";inherits:false}@property --tw-hue-rotate{syntax:"*";inherits:false}@property --tw-invert{syntax:"*";inherits:false}@property --tw-opacity{syntax:"*";inherits:false}@property --tw-saturate{syntax:"*";inherits:false}@property --tw-sepia{syntax:"*";inherits:false}@property --tw-drop-shadow{syntax:"*";inherits:false}@property --tw-drop-shadow-color{syntax:"*";inherits:false}@property --tw-drop-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%}@property --tw-drop-shadow-size{syntax:"*";inherits:false}@property --tw-backdrop-blur{syntax:"*";inherits:false}@property --tw-backdrop-brightness{syntax:"*";inherits:false}@property --tw-backdrop-contrast{syntax:"*";inherits:false}@property --tw-backdrop-grayscale{syntax:"*";inherits:false}@property --tw-backdrop-hue-rotate{syntax:"*";inherits:false}@property --tw-backdrop-invert{syntax:"*";inherits:false}@property --tw-backdrop-opacity{syntax:"*";inherits:false}@property --tw-backdrop-saturate{syntax:"*";inherits:false}@property --tw-backdrop-sepia{syntax:"*";inherits:false}@property --tw-duration{syntax:"*";inherits:false}@property --tw-ease{syntax:"*";inherits:false}@property --tw-scale-x{syntax:"*";inherits:false;initial-value:1}@property --tw-scale-y{syntax:"*";inherits:false;initial-value:1}@property --tw-scale-z{syntax:"*";inherits:false;initial-value:1}@property --tw-content{syntax:"*";inherits:false;initial-value:""}
+
+    </style>
+</head>
+<body class="bg-[#0B0610] text-[#F6F1F8] antialiased selection:bg-[#FF5A1F] selection:text-[#0B0610]">
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <div class="custom-cursor-dot" aria-hidden="true"></div>
+    <div class="custom-cursor-ring" aria-hidden="true"></div>
+
+    <!-- Header -->
+    <header class="fixed inset-x-0 top-0 z-50 px-4 pt-4 sm:px-6 lg:px-10">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4" aria-label="Primary navigation">
+            <a href="#hero" class="group inline-flex shrink-0 items-center gap-2.5 font-display text-sm font-bold tracking-tight text-[#F6F1F8] transition hover:text-[#FF5A1F] sm:text-base xl:text-lg" aria-label="MUHAMMAD IBAD — Home">
+                <img src="favicon.svg" alt="MI logo" class="h-8 w-8 shrink-0 rounded-lg shadow-sm transition-transform duration-300 group-hover:scale-105" width="32" height="32">
+                <span class="whitespace-nowrap">MUHAMMAD IBAD<span class="text-[#FF5A1F]">.</span></span>
+            </a>
+
+            <div class="glass-nav hidden items-center gap-1 rounded-full px-3 py-1.5 md:flex">
+                <a href="#hero" class="rounded-full px-4 py-2 text-sm font-medium text-[#F6F1F8]/90 transition hover:bg-white/10 hover:text-white">Home</a>
+                <a href="#about" class="rounded-full px-4 py-2 text-sm font-medium text-[#B7A9C4] transition hover:bg-white/10 hover:text-white">About</a>
+                <a href="#experience" class="rounded-full px-4 py-2 text-sm font-medium text-[#B7A9C4] transition hover:bg-white/10 hover:text-white">Experience</a>
+                <a href="#projects" class="rounded-full px-4 py-2 text-sm font-medium text-[#B7A9C4] transition hover:bg-white/10 hover:text-white">Projects</a>
+                <a href="#services" class="rounded-full px-4 py-2 text-sm font-medium text-[#B7A9C4] transition hover:bg-white/10 hover:text-white">Services</a>
+                <a href="#contact" class="rounded-full px-4 py-2 text-sm font-medium text-[#B7A9C4] transition hover:bg-white/10 hover:text-white">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <a href="#contact" class="btn-accent magnetic-btn hidden sm:inline-flex" data-cursor="hover">
+                    <span>Get in touch</span>
+                    <span class="btn-arrow-circle" aria-hidden="true">
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/>
+                        </svg>
+                    </span>
+                </a>
+
+                <button
+                    type="button"
+                    id="mobile-menu-toggle"
+                    class="glass-nav inline-flex h-11 w-11 items-center justify-center rounded-full text-[#F6F1F8] md:hidden"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu-panel"
+                >
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobile-menu-panel" class="glass-card mx-auto mt-3 hidden max-w-md rounded-3xl p-5 md:hidden" role="dialog" aria-label="Mobile navigation">
+            <div class="flex flex-col gap-1">
+                <a href="#hero" class="mobile-nav-link rounded-xl px-4 py-3 text-base font-medium text-[#F6F1F8] hover:bg-white/10">Home</a>
+                <a href="#about" class="mobile-nav-link rounded-xl px-4 py-3 text-base font-medium text-[#B7A9C4] hover:bg-white/10 hover:text-white">About</a>
+                <a href="#experience" class="mobile-nav-link rounded-xl px-4 py-3 text-base font-medium text-[#B7A9C4] hover:bg-white/10 hover:text-white">Experience</a>
+                <a href="#projects" class="mobile-nav-link rounded-xl px-4 py-3 text-base font-medium text-[#B7A9C4] hover:bg-white/10 hover:text-white">Projects</a>
+                <a href="#services" class="mobile-nav-link rounded-xl px-4 py-3 text-base font-medium text-[#B7A9C4] hover:bg-white/10 hover:text-white">Services</a>
+                <a href="#contact" class="mobile-nav-link rounded-xl px-4 py-3 text-base font-medium text-[#B7A9C4] hover:bg-white/10 hover:text-white">Contact</a>
+                <a href="#contact" class="btn-orange mobile-nav-link mt-3 justify-center">Get in touch</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Preloader -->
+        <div id="preloader" class="fixed inset-0 z-[9990] flex flex-col justify-between bg-[#0B0610] p-6 sm:p-10" aria-hidden="true">
+            <div class="flex items-center justify-between">
+                <span class="inline-flex items-center gap-2.5 font-display text-base font-bold tracking-tight text-[#F6F1F8] sm:text-xl">
+                    <img src="favicon.svg" alt="MI logo" class="h-7 w-7 rounded-lg" width="28" height="28">
+                    <span>MUHAMMAD IBAD<span class="text-[#FF5A1F]">.</span></span>
+                </span>
+                <span class="text-xs uppercase tracking-[0.25em] text-[#B7A9C4]">Portfolio · Quetta</span>
+            </div>
+
+            <div class="flex items-end justify-between gap-4">
+                <div class="h-1 w-44 overflow-hidden rounded-full bg-white/10 sm:w-64">
+                    <div id="preloader-bar" class="h-full w-0 rounded-full bg-gradient-to-r from-[#C21A6E] via-[#F0475A] to-[#FF5A1F]"></div>
+                </div>
+                <div id="preloader-percent" class="font-display text-5xl font-bold tabular-nums tracking-tight text-white sm:text-7xl">0%</div>
+            </div>
+        </div>
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero-gradient relative flex min-h-[100dvh] w-full flex-col justify-between overflow-hidden pt-20 pb-0 sm:pt-24 lg:min-h-[100dvh] lg:pb-7">
+            <div class="film-grain absolute inset-0 z-10"></div>
+            <div class="hero-vignette absolute inset-0 z-10"></div>
+
+            <!-- Interactive Particle Canvas -->
+            <canvas id="hero-canvas" class="pointer-events-none absolute inset-0 z-20 h-full w-full" aria-hidden="true"></canvas>
+
+            <!-- Portrait Layer -->
+            <div id="hero-fallback-portrait" class="pointer-events-none relative z-20 order-2 mt-2 flex justify-center transition-transform duration-150 ease-out will-change-transform lg:order-none lg:absolute lg:inset-x-0 lg:bottom-0 lg:mt-0">
+                <picture>
+                    <source srcset="images/ibad-hero-cutout.webp" type="image/webp">
+                    <img
+                        src="images/ibad-hero-cutout.png"
+                        alt="Muhammad IBAD portrait"
+                        class="max-h-[38dvh] w-auto object-contain object-bottom opacity-95 drop-shadow-[0_24px_60px_rgba(11,6,16,0.85)] sm:max-h-[44dvh] lg:max-h-[76dvh]"
+                        fetchpriority="high"
+                    >
+                </picture>
+            </div>
+
+            <div class="relative z-30 order-1 mx-auto flex w-full max-w-7xl flex-1 flex-col justify-between px-4 sm:px-6 lg:order-none lg:px-10">
+                <div class="grid items-center gap-5 py-2 lg:my-auto lg:grid-cols-12 lg:gap-6 lg:py-4">
+                    <!-- Left headline block -->
+                    <div class="lg:col-span-5 will-change-transform" data-hero-left>
+                        <p class="font-display text-xs font-semibold tracking-wider uppercase text-[#FF5A1F] sm:text-sm">
+                            Hi, I'm MUHAMMAD IBAD
+                        </p>
+                        <h1 class="hero-h1 mt-2 text-[#F6F1F8]">
+                            Full-Stack<br>
+                            Developer
+                            <span class="font-serif-accent block text-[0.74em] font-normal text-[#F6F1F8]/95">
+                                Web, Laravel &amp; AI
+                            </span>
+                        </h1>
+
+                        <p class="mt-3 max-w-md text-sm leading-relaxed text-[#E4D8EE]">
+                            I build fast, scalable web apps across PHP, Laravel, JavaScript &amp; Node.js, lead teams at Saylani IT, and co-run Pixlo.pro — a software agency delivering web, branding and SEO.
+                        </p>
+
+                        <div class="mt-5 flex flex-wrap items-center gap-3">
+                            <a href="#contact" class="btn-accent magnetic-btn" data-cursor="hover">
+                                <span>Get in touch</span>
+                                <span class="btn-arrow-circle" aria-hidden="true">
+                                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#projects" class="btn-ghost" data-cursor="hover">View work</a>
+                            <a href="#contact" class="btn-ghost" title="Request latest CV" data-cursor="hover">Request CV</a>
+                        </div>
+                    </div>
+
+                    <!-- Right floating experience cards -->
+                    <div class="lg:col-span-4 lg:col-start-9" data-hero-right>
+                        <div class="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-1">
+                            <div data-hero-exp="0" class="will-change-transform">
+                                <a href="#experience" class="glass-card tilt-card hero-exp-float group block rounded-2xl px-4 py-3 transition lg:-translate-x-3" data-cursor="hover">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span class="text-[11px] font-semibold uppercase tracking-wider text-[#FF5A1F]">Saylani IT</span>
+                                        <span class="text-[11px] text-[#B7A9C4]">Oct 2026 – Present</span>
+                                    </div>
+                                    <p class="font-display mt-0.5 text-sm font-semibold text-white transition group-hover:text-[#FF5A1F]">Lead Manager</p>
+                                </a>
+                            </div>
+
+                            <div data-hero-exp="1" class="will-change-transform">
+                                <a href="#experience" class="glass-card tilt-card hero-exp-float-delay group block rounded-2xl px-4 py-3 transition lg:translate-x-2" data-cursor="hover">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span class="text-[11px] font-semibold uppercase tracking-wider text-[#FF5A1F]">Ultrasoft Systems</span>
+                                        <span class="text-[11px] text-[#B7A9C4]">Mar 2026 – Sep 2026</span>
+                                    </div>
+                                    <p class="font-display mt-0.5 text-sm font-semibold text-white transition group-hover:text-[#FF5A1F]">PHP Laravel Developer</p>
+                                </a>
+                            </div>
+
+                            <div data-hero-exp="2" class="will-change-transform">
+                                <a href="#experience" class="glass-card tilt-card hero-exp-float group block rounded-2xl px-4 py-3 transition lg:-translate-x-3" data-cursor="hover">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span class="text-[11px] font-semibold uppercase tracking-wider text-[#FF5A1F]">Pixlo.pro</span>
+                                        <span class="text-[11px] text-[#B7A9C4]">Jan 2026 – Present</span>
+                                    </div>
+                                    <p class="font-display mt-0.5 text-sm font-semibold text-white transition group-hover:text-[#FF5A1F]">Co-Founder &amp; Project Lead</p>
+                                </a>
+                            </div>
+
+                            <div data-hero-exp="3" class="will-change-transform">
+                                <a href="#experience" class="glass-card tilt-card hero-exp-float-delay group block rounded-2xl px-4 py-3 transition lg:translate-x-2" data-cursor="hover">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span class="text-[11px] font-semibold uppercase tracking-wider text-[#FF5A1F]">Fiverr</span>
+                                        <span class="text-[11px] text-[#B7A9C4]">Jan 2024 – Present</span>
+                                    </div>
+                                    <p class="font-display mt-0.5 text-sm font-semibold text-white transition group-hover:text-[#FF5A1F]">Freelance Web Developer</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Stat Strip -->
+                <div class="grid grid-cols-2 gap-3 border-t border-white/15 pt-3.5 pb-4 sm:grid-cols-4 sm:gap-5 sm:pt-4 lg:pb-0">
+                    <div>
+                        <span class="text-[11px] font-bold text-[#FF5A1F]">#01</span>
+                        <p class="mt-0.5 text-xs font-medium text-white sm:text-sm">2+ yrs experience</p>
+                    </div>
+                    <div>
+                        <span class="text-[11px] font-bold text-[#FF5A1F]">#02</span>
+                        <p class="mt-0.5 text-xs font-medium text-white sm:text-sm">20+ volunteers led</p>
+                    </div>
+                    <div>
+                        <span class="text-[11px] font-bold text-[#FF5A1F]">#03</span>
+                        <p class="mt-0.5 text-xs font-medium text-white sm:text-sm">NASA Space Apps mentor</p>
+                    </div>
+                    <div>
+                        <span class="text-[11px] font-bold text-[#FF5A1F]">#04</span>
+                        <p class="mt-0.5 text-xs font-medium text-white sm:text-sm">BS IT — BUITEMS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="relative overflow-hidden py-24 sm:py-32">
+            <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:px-10">
+                <div class="lg:col-span-5" data-reveal>
+                    <div class="glass-card tilt-card relative overflow-hidden rounded-[2rem] p-3">
+                        <div class="overflow-hidden rounded-[1.5rem] bg-[#150B1D]">
+                            <picture>
+                                <source srcset="images/ibad-about-suit.webp" type="image/webp">
+                                <img src="images/ibad-about-suit.jpg" alt="Muhammad IBAD seated in formal suit" class="aspect-[5/4] w-full object-cover object-top" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="mt-3 flex items-center justify-between px-2 pb-1 text-xs text-[#B7A9C4]">
+                            <span>Quetta, Pakistan</span>
+                            <span class="inline-flex items-center gap-1.5 text-emerald-400">
+                                <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+                                Available for projects &amp; mentoring
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7" data-reveal>
+                    <p class="text-xs font-semibold uppercase tracking-[0.22em] text-[#FF5A1F]">About</p>
+                    <h2 class="font-display mt-3 text-3xl font-bold tracking-tight text-white sm:text-5xl">
+                        Engineering clarity, teaching craft &amp;
+                        <span class="font-serif-accent text-[#F0475A]">agency delivery</span>.
+                    </h2>
+
+                    <p class="mt-6 text-base leading-relaxed text-[#B7A9C4] sm:text-lg">
+                        Full-Stack Web Developer with hands-on experience in HTML5, CSS3, JavaScript, PHP, Laravel and Node.js, active since 2024 across agency co-founding, freelance delivery and technical team leadership. Co-Founder of Pixlo.pro (web development, branding, SEO, design) and an active Fiverr freelancer since 2024. Former IEEE Student Branch Chairman (BUITEMS), where I mentored a multi-developer team for the NASA Space Apps Challenge, facilitated a hands-on workshop on building websites with SDLC and AI code-generation tools, and led 20+ student volunteers.
+                    </p>
+
+                    <div class="mt-8 grid gap-4 sm:grid-cols-3">
+                        <div class="glass-card rounded-2xl p-4">
+                            <p class="text-xs uppercase tracking-wider text-[#B7A9C4]">Current Leadership</p>
+                            <p class="font-display mt-1 text-base font-semibold text-white">Lead Manager</p>
+                            <p class="text-xs text-[#FF5A1F]">Saylani IT · Oct 2026–Present</p>
+                        </div>
+                        <div class="glass-card rounded-2xl p-4">
+                            <p class="text-xs uppercase tracking-wider text-[#B7A9C4]">Software Agency</p>
+                            <p class="font-display mt-1 text-base font-semibold text-white">Co-Founder</p>
+                            <p class="text-xs text-[#FF5A1F]">Pixlo.pro · Web &amp; SEO</p>
+                        </div>
+                        <div class="glass-card rounded-2xl p-4">
+                            <p class="text-xs uppercase tracking-wider text-[#B7A9C4]">Community Impact</p>
+                            <p class="font-display mt-1 text-base font-semibold text-white">IEEE Chairman</p>
+                            <p class="text-xs text-[#FF5A1F]">BUITEMS · 20+ volunteers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE & LEADERSHIP -->
+        <section id="experience" class="relative py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+                <div class="max-w-2xl" data-reveal>
+                    <p class="text-xs font-semibold uppercase tracking-[0.22em] text-[#FF5A1F]">Career &amp; Leadership</p>
+                    <h2 class="font-display mt-3 text-3xl font-bold tracking-tight text-white sm:text-5xl">
+                        Work Experience &amp; <span class="font-serif-accent text-[#F0475A]">Track Record</span>
+                    </h2>
+                </div>
+
+                <!-- Vertical Timeline -->
+                <div class="relative mt-14 space-y-6 before:absolute before:top-2 before:bottom-2 before:left-4 before:w-px before:bg-gradient-to-b before:from-[#FF5A1F] before:via-[#C21A6E] before:to-transparent md:before:left-1/2">
+                    <div class="relative flex flex-col md:flex-row md:justify-start" data-reveal>
+                        <span class="absolute top-7 left-4 z-10 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-[#0B0610] bg-[#FF5A1F] shadow-[0_0_16px_#FF5A1F] md:left-1/2" aria-hidden="true"></span>
+                        <div class="ml-10 md:ml-0 md:w-[46%]">
+                            <article class="glass-card tilt-card rounded-3xl p-6 sm:p-7">
+                                <div class="flex flex-wrap items-center justify-between gap-2">
+                                    <span class="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium text-[#FF5A1F]">Oct 2026 – Present</span>
+                                    <span class="text-xs uppercase tracking-wider text-[#B7A9C4]">Experience</span>
+                                </div>
+                                <h3 class="font-display mt-4 text-xl font-semibold text-white">Lead Manager</h3>
+                                <p class="mt-1 text-sm font-medium text-[#F0475A]">Saylani IT · Quetta</p>
+                                <p class="mt-2 text-xs text-[#B7A9C4]">Leading Quetta operations, trainers, and technical delivery.</p>
+                                <ul class="mt-4 space-y-2 text-sm text-[#B7A9C4]">
+                                    <li class="flex items-start gap-2.5"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C21A6E]" aria-hidden="true"></span><span>Lead the Quetta team and day-to-day delivery</span></li>
+                                    <li class="flex items-start gap-2.5"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C21A6E]" aria-hidden="true"></span><span>Coordinate trainers, learners and operations</span></li>
+                                    <li class="flex items-start gap-2.5"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C21A6E]" aria-hidden="true"></span><span>Drive quality, reporting and growth of IT programmes</span></li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="relative flex flex-col md:flex-row md:justify-end" data-reveal>
+                        <span class="absolute top-7 left-4 z-10 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-[#0B0610] bg-[#FF5A1F] shadow-[0_0_16px_#FF5A1F] md:left-1/2" aria-hidden="true"></span>
+                        <div class="ml-10 md:ml-0 md:w-[46%]">
+                            <article class="glass-card tilt-card rounded-3xl p-6 sm:p-7">
+                                <div class="flex flex-wrap items-center justify-between gap-2">
+                                    <span class="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium text-[#FF5A1F]">Mar 2026 – Sep 2026</span>
+                                    <span class="text-xs uppercase tracking-wider text-[#B7A9C4]">Experience</span>
+                                </div>
+                                <h3 class="font-display mt-4 text-xl font-semibold text-white">PHP Laravel Developer</h3>
+                                <p class="mt-1 text-sm font-medium text-[#F0475A]">Ultrasoft Systems · Quetta</p>
+                                <ul class="mt-4 space-y-2 text-sm text-[#B7A9C4]">
+                                    <li class="flex items-start gap-2.5"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C21A6E]" aria-hidden="true"></span><span>Developed and maintained web applications with Laravel</span></li>
+                                    <li class="flex items-start gap-2.5"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C21A6E]" aria-hidden="true"></span><span>Designed and optimised MySQL databases for performance and scalability</span></li>
+                                    <li class="flex items-start gap-2.5"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C21A6E]" aria-hidden="true"></span><span>Built RESTful APIs and integrated third-party services</span></li>
+                                    <li class="flex items-start gap-2.5"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C21A6E]" aria-hidden="true"></span><span>Worked in agile cycles for timely feature delivery</span></li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="relative flex flex-col md:flex-row md:justify-start" data-reveal>
+                        <span class="absolute top-7 left-4 z-10 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-[#0B0610] bg-[#FF5A1F] shadow-[0_0_16px_#FF5A1F] md:left-1/2" aria-hidden="true"></span>
+                        <div class="ml-10 md:ml-0 md:w-[46%]">
+                            <article class="glass-card tilt-card rounded-3xl p-6 sm:p-7">
+                                <div class="flex flex-wrap items-center justify-between gap-2">
+                                    <span class="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium text-[#FF5A1F]">Jan 2026 – Present</span>
+                                    <span class="text-xs uppercase tracking-wider text-[#B7A9C4]">Experience</span>
+                                </div>
+                                <h3 class="font-display mt-4 text-xl font-semibold text-white">Co-Founder &amp; Project Lead</h3>
+                                <p class="mt-1 text-sm font-medium text-[#F0475A]">Pixlo.pro · Quetta</p>
+                                <p class="mt-2 text-xs text-[#B7A9C4]">Co-founded with Muhammad Saad.</p>
+                                <ul class="mt-4 space-y-2 text-sm text-[#B7A9C4]">
+                                    <li class="flex items-start gap-2.5"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C21A6E]" aria-hidden="true"></span><span>Co-founded and grew a software agency: web development, branding, SEO, design</span></li>
+                                    <li class="flex items-start gap-2.5"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C21A6E]" aria-hidden="true"></span><span>Lead project management, client communication and social media marketing</span></li>
+                                    <li class="flex items-start gap-2.5"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C21A6E]" aria-hidden="true"></span><span>Scope, price and deliver projects across Starter / Business / Premium tiers</span></li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="relative flex flex-col md:flex-row md:justify-end" data-reveal>
+                        <span class="absolute top-7 left-4 z-10 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-[#0B0610] bg-[#FF5A1F] shadow-[0_0_16px_#FF5A1F] md:left-1/2" aria-hidden="true"></span>
+                        <div class="ml-10 md:ml-0 md:w-[46%]">
+                            <article class="glass-card tilt-card rounded-3xl p-6 sm:p-7">
+                                <div class="flex flex-wrap items-center justify-between gap-2">
+                                    <span class="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium text-[#FF5A1F]">Jan 2024 – Present</span>
+                                    <span class="text-xs uppercase tracking-wider text-[#B7A9C4]">Experience</span>
+                                </div>
+                                <h3 class="font-display mt-4 text-xl font-semibold text-white">Freelance Web Developer</h3>
+                                <p class="mt-1 text-sm font-medium text-[#F0475A]">Fiverr · Remote</p>
+                                <p class="mt-2 text-xs text-[#B7A9C4]">fiverr.com/haris_gd — co-managed with a family partner.</p>
+                                <ul class="mt-4 space-y-2 text-sm text-[#B7A9C4]">
+                                    <li class="flex items-start gap-2.5"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C21A6E]" aria-hidden="true"></span><span>Deliver web development and design projects via an active profile</span></li>
+                                    <li class="flex items-start gap-2.5"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C21A6E]" aria-hidden="true"></span><span>Handle requirement gathering, communication and delivery</span></li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="relative flex flex-col md:flex-row md:justify-start" data-reveal>
+                        <span class="absolute top-7 left-4 z-10 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-[#0B0610] bg-[#FF5A1F] shadow-[0_0_16px_#FF5A1F] md:left-1/2" aria-hidden="true"></span>
+                        <div class="ml-10 md:ml-0 md:w-[46%]">
+                            <article class="glass-card tilt-card rounded-3xl p-6 sm:p-7">
+                                <div class="flex flex-wrap items-center justify-between gap-2">
+                                    <span class="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium text-[#FF5A1F]">Jan 2025 – Present</span>
+                                    <span class="text-xs uppercase tracking-wider text-[#B7A9C4]">Leadership</span>
+                                </div>
+                                <h3 class="font-display mt-4 text-xl font-semibold text-white">Section Student Representative &amp; Secretary</h3>
+                                <p class="mt-1 text-sm font-medium text-[#F0475A]">IEEE BUITEMS · Quetta</p>
+                                <ul class="mt-4 space-y-2 text-sm text-[#B7A9C4]">
+                                    <li class="flex items-start gap-2.5"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C21A6E]" aria-hidden="true"></span><span>Official student representative to IEEE Pakistan Section</span></li>
+                                    <li class="flex items-start gap-2.5"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C21A6E]" aria-hidden="true"></span><span>Manage branch records, correspondence and documentation</span></li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="relative flex flex-col md:flex-row md:justify-end" data-reveal>
+                        <span class="absolute top-7 left-4 z-10 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-[#0B0610] bg-[#FF5A1F] shadow-[0_0_16px_#FF5A1F] md:left-1/2" aria-hidden="true"></span>
+                        <div class="ml-10 md:ml-0 md:w-[46%]">
+                            <article class="glass-card tilt-card rounded-3xl p-6 sm:p-7">
+                                <div class="flex flex-wrap items-center justify-between gap-2">
+                                    <span class="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium text-[#FF5A1F]">Jan 2024 – Jan 2025</span>
+                                    <span class="text-xs uppercase tracking-wider text-[#B7A9C4]">Leadership</span>
+                                </div>
+                                <h3 class="font-display mt-4 text-xl font-semibold text-white">Chairman, IEEE Student Branch</h3>
+                                <p class="mt-1 text-sm font-medium text-[#F0475A]">IEEE BUITEMS · Quetta</p>
+                                <ul class="mt-4 space-y-2 text-sm text-[#B7A9C4]">
+                                    <li class="flex items-start gap-2.5"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C21A6E]" aria-hidden="true"></span><span>Led a team of 20+ volunteers</span></li>
+                                    <li class="flex items-start gap-2.5"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C21A6E]" aria-hidden="true"></span><span>Organised technical workshops, trainings, seminars and conferences</span></li>
+                                    <li class="flex items-start gap-2.5"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C21A6E]" aria-hidden="true"></span><span>Coordinated with IEEE Pakistan Section and international IEEE bodies</span></li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Workshops & Mentoring -->
+                <div id="training" class="mt-20">
+                    <div class="flex flex-wrap items-end justify-between gap-4" data-reveal>
+                        <div>
+                            <p class="text-xs font-semibold uppercase tracking-[0.22em] text-[#FF5A1F]">Mentoring &amp; Community</p>
+                            <h3 class="font-display mt-2 text-2xl font-bold text-white sm:text-3xl">
+                                Workshops &amp; <span class="font-serif-accent text-[#F0475A]">Mentoring</span>
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 grid gap-6 md:grid-cols-2">
+                        <article class="glass-card tilt-card rounded-3xl p-6 sm:p-7" data-reveal>
+                            <span class="rounded-full border border-[#C21A6E]/40 bg-[#C21A6E]/15 px-3 py-1 text-xs font-medium text-[#F6F1F8]">2024 · IEEE BUITEMS</span>
+                            <h4 class="font-display mt-4 text-xl font-semibold text-white">Lead Mentor — NASA Space Apps Challenge</h4>
+                            <ul class="mt-3 space-y-2 text-sm text-[#B7A9C4]">
+                                <li>Led and trained a multi-developer team from problem selection to build and submission</li>
+                            </ul>
+                        </article>
+
+                        <article class="glass-card tilt-card rounded-3xl p-6 sm:p-7" data-reveal>
+                            <span class="rounded-full border border-[#C21A6E]/40 bg-[#C21A6E]/15 px-3 py-1 text-xs font-medium text-[#F6F1F8]">2025 · Quetta Technical Workshop</span>
+                            <h4 class="font-display mt-4 text-xl font-semibold text-white">Workshop Facilitator — Website Development with AI Tools</h4>
+                            <ul class="mt-3 space-y-2 text-sm text-[#B7A9C4]">
+                                <li>Taught the full SDLC for websites and how to build with AI code-generation tools and coding agents</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MASKED DIVIDER -->
+        <section class="relative overflow-hidden border-y border-white/10 bg-[#150B1D]/50 py-10 sm:py-14" aria-hidden="true">
+            <div id="masked-divider-track" class="flex w-max items-center gap-12 will-change-transform">
+                <span class="masked-divider-word">BUILDING · TEACHING · LEADING</span>
+                <span class="masked-divider-word">LARAVEL · AGENCY · MENTORING</span>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="relative py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+                <div class="flex flex-col justify-between gap-6 lg:flex-row lg:items-end" data-reveal>
+                    <div>
+                        <p class="text-xs font-semibold uppercase tracking-[0.22em] text-[#FF5A1F]">Portfolio</p>
+                        <h2 class="font-display mt-3 text-3xl font-bold tracking-tight text-white sm:text-5xl">
+                            Selected Works &amp; <span class="font-serif-accent text-[#F0475A]">Featured Projects</span>
+                        </h2>
+                        <p class="mt-3 max-w-xl text-sm text-[#B7A9C4] sm:text-base">
+                            Production web apps, multi-tenant Laravel systems, AI prototypes, and Pixlo.pro client builds.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2" role="group" aria-label="Filter projects by category">
+                        <button type="button" class="project-filter-btn rounded-full bg-[#FF5A1F] px-4 py-2 text-xs font-bold text-[#0B0610] transition" data-filter="all" aria-pressed="true">All (6)</button>
+                        <button type="button" class="project-filter-btn rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-medium text-[#B7A9C4] transition hover:border-white/35 hover:text-white" data-filter="AI" aria-pressed="false">AI</button>
+                        <button type="button" class="project-filter-btn rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-medium text-[#B7A9C4] transition hover:border-white/35 hover:text-white" data-filter="Laravel" aria-pressed="false">Laravel</button>
+                        <button type="button" class="project-filter-btn rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-medium text-[#B7A9C4] transition hover:border-white/35 hover:text-white" data-filter="Web" aria-pressed="false">Web</button>
+                    </div>
+                </div>
+
+                <div id="projects-grid" class="mt-12 grid gap-7 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Asaan Ilaaj -->
+                    <article class="project-card glass-card tilt-card group flex flex-col overflow-hidden rounded-3xl p-4" data-category="AI" data-reveal>
+                        <button type="button" data-project-open="asaan-ilaaj" class="relative block w-full overflow-hidden rounded-2xl bg-[#0B0610] text-left">
+                            <img src="images/project-asaan-ilaaj.jpg" alt="Asaan Ilaaj mockup" class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105" width="1600" height="1000" loading="lazy">
+                            <span class="absolute top-3 left-3 rounded-full border border-white/15 bg-[#0B0610]/80 px-3 py-1 text-[11px] font-semibold text-white backdrop-blur">Built</span>
+                        </button>
+                        <div class="flex flex-1 flex-col p-2 pt-5">
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="text-xs font-semibold uppercase tracking-wider text-[#FF5A1F]">AI</span>
+                            </div>
+                            <h3 class="font-display mt-2 text-xl font-bold text-white">
+                                <button type="button" data-project-open="asaan-ilaaj" class="text-left transition hover:text-[#FF5A1F]">Asaan Ilaaj</button>
+                            </h3>
+                            <p class="mt-2 flex-1 text-sm leading-relaxed text-[#B7A9C4]">
+                                Multilingual Android &amp; AI healthcare app ("Smart Diagnosis") for Pakistan: symptom assessment, Drug Guard interaction checker, medical records, and 6-language support (Urdu, Sindhi, Pashto, Balochi, Persian, English).
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-1.5">
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-[#E4D8EE]">Node.js</span>
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-[#E4D8EE]">Infermedica API</span>
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-[#E4D8EE]">OpenFDA API</span>
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-[#E4D8EE]">Google Cloud Translation</span>
+                            </div>
+                            <div class="mt-5 border-t border-white/10 pt-4">
+                                <button type="button" data-project-open="asaan-ilaaj" class="inline-flex items-center gap-2 text-sm font-semibold text-white transition hover:text-[#FF5A1F]">
+                                    <span>Explore case study</span>
+                                    <svg class="h-4 w-4 transition group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- EduCore -->
+                    <article class="project-card glass-card tilt-card group flex flex-col overflow-hidden rounded-3xl p-4" data-category="Laravel" data-reveal>
+                        <button type="button" data-project-open="educore" class="relative block w-full overflow-hidden rounded-2xl bg-[#0B0610] text-left">
+                            <img src="images/project-educore.jpg" alt="EduCore mockup" class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105" width="1600" height="1000" loading="lazy">
+                            <span class="absolute top-3 left-3 rounded-full border border-white/15 bg-[#0B0610]/80 px-3 py-1 text-[11px] font-semibold text-white backdrop-blur">Built</span>
+                        </button>
+                        <div class="flex flex-1 flex-col p-2 pt-5">
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="text-xs font-semibold uppercase tracking-wider text-[#FF5A1F]">Laravel</span>
+                            </div>
+                            <h3 class="font-display mt-2 text-xl font-bold text-white">
+                                <button type="button" data-project-open="educore" class="text-left transition hover:text-[#FF5A1F]">EduCore</button>
+                            </h3>
+                            <p class="mt-2 flex-1 text-sm leading-relaxed text-[#B7A9C4]">
+                                Multi-tenant School LMS, subdomain-based tenancy, six roles with full CRUD, glassmorphism UI.
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-1.5">
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-[#E4D8EE]">Laravel</span>
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-[#E4D8EE]">MySQL</span>
+                            </div>
+                            <div class="mt-5 border-t border-white/10 pt-4">
+                                <button type="button" data-project-open="educore" class="inline-flex items-center gap-2 text-sm font-semibold text-white transition hover:text-[#FF5A1F]">
+                                    <span>Explore case study</span>
+                                    <svg class="h-4 w-4 transition group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pixlo.pro -->
+                    <article class="project-card glass-card tilt-card group flex flex-col overflow-hidden rounded-3xl p-4" data-category="Web" data-reveal>
+                        <button type="button" data-project-open="pixlo-pro" class="relative block w-full overflow-hidden rounded-2xl bg-[#0B0610] text-left">
+                            <img src="images/project-pixlo.jpg" alt="Pixlo.pro mockup" class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105" width="1600" height="1000" loading="lazy">
+                            <span class="absolute top-3 left-3 rounded-full border border-white/15 bg-[#0B0610]/80 px-3 py-1 text-[11px] font-semibold text-white backdrop-blur">Live</span>
+                        </button>
+                        <div class="flex flex-1 flex-col p-2 pt-5">
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="text-xs font-semibold uppercase tracking-wider text-[#FF5A1F]">Web</span>
+                                <a href="https://pixlo.pro" target="_blank" rel="noopener noreferrer" class="text-xs text-[#B7A9C4] underline-offset-4 hover:text-white hover:underline">Live site ↗</a>
+                            </div>
+                            <h3 class="font-display mt-2 text-xl font-bold text-white">
+                                <button type="button" data-project-open="pixlo-pro" class="text-left transition hover:text-[#FF5A1F]">Pixlo.pro</button>
+                            </h3>
+                            <p class="mt-2 flex-1 text-sm leading-relaxed text-[#B7A9C4]">
+                                Agency website &amp; client delivery across web development, branding, and SEO.
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-1.5">
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-[#E4D8EE]">Laravel</span>
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-[#E4D8EE]">WordPress</span>
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-[#E4D8EE]">Shopify</span>
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-[#E4D8EE]">Webflow</span>
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-[#E4D8EE]">Framer</span>
+                            </div>
+                            <div class="mt-5 border-t border-white/10 pt-4">
+                                <button type="button" data-project-open="pixlo-pro" class="inline-flex items-center gap-2 text-sm font-semibold text-white transition hover:text-[#FF5A1F]">
+                                    <span>Explore case study</span>
+                                    <svg class="h-4 w-4 transition group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- StockFlow -->
+                    <article class="project-card glass-card tilt-card group flex flex-col overflow-hidden rounded-3xl p-4" data-category="Laravel" data-reveal>
+                        <button type="button" data-project-open="stockflow" class="relative block w-full overflow-hidden rounded-2xl bg-[#0B0610] text-left">
+                            <img src="images/project-stockflow.jpg" alt="StockFlow mockup" class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105" width="1600" height="1000" loading="lazy">
+                            <span class="absolute top-3 left-3 rounded-full border border-white/15 bg-[#0B0610]/80 px-3 py-1 text-[11px] font-semibold text-white backdrop-blur">In Development</span>
+                        </button>
+                        <div class="flex flex-1 flex-col p-2 pt-5">
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="text-xs font-semibold uppercase tracking-wider text-[#FF5A1F]">Laravel</span>
+                            </div>
+                            <h3 class="font-display mt-2 text-xl font-bold text-white">
+                                <button type="button" data-project-open="stockflow" class="text-left transition hover:text-[#FF5A1F]">StockFlow</button>
+                            </h3>
+                            <p class="mt-2 flex-1 text-sm leading-relaxed text-[#B7A9C4]">
+                                POS + Inventory + Invoicing system built for fast retail operations.
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-1.5">
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-[#E4D8EE]">Laravel</span>
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-[#E4D8EE]">MySQL</span>
+                            </div>
+                            <div class="mt-5 border-t border-white/10 pt-4">
+                                <button type="button" data-project-open="stockflow" class="inline-flex items-center gap-2 text-sm font-semibold text-white transition hover:text-[#FF5A1F]">
+                                    <span>Explore case study</span>
+                                    <svg class="h-4 w-4 transition group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Budget Management System -->
+                    <article class="project-card glass-card tilt-card group flex flex-col overflow-hidden rounded-3xl p-4" data-category="Laravel" data-reveal>
+                        <button type="button" data-project-open="budget-management-system" class="relative block w-full overflow-hidden rounded-2xl bg-[#0B0610] text-left">
+                            <img src="images/project-budget.jpg" alt="Budget Management System mockup" class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105" width="1600" height="1000" loading="lazy">
+                            <span class="absolute top-3 left-3 rounded-full border border-white/15 bg-[#0B0610]/80 px-3 py-1 text-[11px] font-semibold text-white backdrop-blur">Built</span>
+                        </button>
+                        <div class="flex flex-1 flex-col p-2 pt-5">
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="text-xs font-semibold uppercase tracking-wider text-[#FF5A1F]">Laravel</span>
+                            </div>
+                            <h3 class="font-display mt-2 text-xl font-bold text-white">
+                                <button type="button" data-project-open="budget-management-system" class="text-left transition hover:text-[#FF5A1F]">Budget Management System</button>
+                            </h3>
+                            <p class="mt-2 flex-1 text-sm leading-relaxed text-[#B7A9C4]">
+                                Local-network budget tracker usable from phone over WiFi.
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-1.5">
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-[#E4D8EE]">Laravel</span>
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-[#E4D8EE]">SQLite</span>
+                            </div>
+                            <div class="mt-5 border-t border-white/10 pt-4">
+                                <button type="button" data-project-open="budget-management-system" class="inline-flex items-center gap-2 text-sm font-semibold text-white transition hover:text-[#FF5A1F]">
+                                    <span>Explore case study</span>
+                                    <svg class="h-4 w-4 transition group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- AI Content Repurposing Tool -->
+                    <article class="project-card glass-card tilt-card group flex flex-col overflow-hidden rounded-3xl p-4" data-category="AI" data-reveal>
+                        <button type="button" data-project-open="ai-content-repurposing-tool" class="relative block w-full overflow-hidden rounded-2xl bg-[#0B0610] text-left">
+                            <img src="images/project-ai-repurposer.jpg" alt="AI Content Repurposing Tool mockup" class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105" width="1600" height="1000" loading="lazy">
+                            <span class="absolute top-3 left-3 rounded-full border border-white/15 bg-[#0B0610]/80 px-3 py-1 text-[11px] font-semibold text-white backdrop-blur">Concept</span>
+                        </button>
+                        <div class="flex flex-1 flex-col p-2 pt-5">
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="text-xs font-semibold uppercase tracking-wider text-[#FF5A1F]">AI</span>
+                            </div>
+                            <h3 class="font-display mt-2 text-xl font-bold text-white">
+                                <button type="button" data-project-open="ai-content-repurposing-tool" class="text-left transition hover:text-[#FF5A1F]">AI Content Repurposing Tool</button>
+                            </h3>
+                            <p class="mt-2 flex-1 text-sm leading-relaxed text-[#B7A9C4]">
+                                Turns long videos into short-form content (transcribe, clip, caption).
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-1.5">
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-[#E4D8EE]">Laravel</span>
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-[#E4D8EE]">Whisper</span>
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-[#E4D8EE]">FFmpeg</span>
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-[#E4D8EE]">yt-dlp</span>
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-[#E4D8EE]">Gemini API</span>
+                            </div>
+                            <div class="mt-5 border-t border-white/10 pt-4">
+                                <button type="button" data-project-open="ai-content-repurposing-tool" class="inline-flex items-center gap-2 text-sm font-semibold text-white transition hover:text-[#FF5A1F]">
+                                    <span>Explore case study</span>
+                                    <svg class="h-4 w-4 transition group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="relative py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+                <div class="max-w-2xl" data-reveal>
+                    <p class="text-xs font-semibold uppercase tracking-[0.22em] text-[#FF5A1F]">Pixlo.pro Agency Tiers</p>
+                    <h2 class="font-display mt-3 text-3xl font-bold tracking-tight text-white sm:text-5xl">
+                        Services Built for <span class="font-serif-accent text-[#F0475A]">Real Growth</span>
+                    </h2>
+                    <p class="mt-3 text-sm text-[#B7A9C4] sm:text-base">
+                        Pick a scope tier that fits your stage. Every project is scoped transparently based on your requirements.
+                    </p>
+                </div>
+
+                <div class="mt-12 grid gap-7 lg:grid-cols-3">
+                    <article class="glass-card tilt-card flex flex-col rounded-3xl p-7" data-reveal>
+                        <div class="flex items-center justify-between">
+                            <span class="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#FF5A1F]">starter</span>
+                        </div>
+                        <h3 class="font-display mt-5 text-2xl font-bold text-white">Starter</h3>
+                        <p class="mt-3 text-sm leading-relaxed text-[#B7A9C4]">High-impact landing page engineered for speed, clarity, and lead capture.</p>
+                        <ul class="mt-6 flex-1 space-y-3 border-t border-white/10 pt-6 text-sm text-[#E4D8EE]">
+                            <li class="flex items-start gap-2.5"><svg class="mt-0.5 h-4 w-4 shrink-0 text-[#FF5A1F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg><span>Responsive editorial landing page</span></li>
+                            <li class="flex items-start gap-2.5"><svg class="mt-0.5 h-4 w-4 shrink-0 text-[#FF5A1F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg><span>Clean conversion-focused UI &amp; copy layout</span></li>
+                            <li class="flex items-start gap-2.5"><svg class="mt-0.5 h-4 w-4 shrink-0 text-[#FF5A1F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg><span>On-page SEO metadata &amp; Open Graph</span></li>
+                            <li class="flex items-start gap-2.5"><svg class="mt-0.5 h-4 w-4 shrink-0 text-[#FF5A1F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg><span>Validated contact / inquiry form</span></li>
+                            <li class="flex items-start gap-2.5"><svg class="mt-0.5 h-4 w-4 shrink-0 text-[#FF5A1F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg><span>Fast launch &amp; handover</span></li>
+                        </ul>
+                        <button type="button" class="quote-tier-btn btn-ghost mt-8 w-full justify-center" data-tier="starter" data-tier-label="Starter">Get a quote</button>
+                    </article>
+
+                    <article class="glass-card tilt-card flex flex-col rounded-3xl p-7" data-reveal>
+                        <div class="flex items-center justify-between">
+                            <span class="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#FF5A1F]">business</span>
+                        </div>
+                        <h3 class="font-display mt-5 text-2xl font-bold text-white">Business</h3>
+                        <p class="mt-3 text-sm leading-relaxed text-[#B7A9C4]">Multi-page website with CMS control, brand polish, and technical SEO.</p>
+                        <ul class="mt-6 flex-1 space-y-3 border-t border-white/10 pt-6 text-sm text-[#E4D8EE]">
+                            <li class="flex items-start gap-2.5"><svg class="mt-0.5 h-4 w-4 shrink-0 text-[#FF5A1F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg><span>Multi-page site + easy content management</span></li>
+                            <li class="flex items-start gap-2.5"><svg class="mt-0.5 h-4 w-4 shrink-0 text-[#FF5A1F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg><span>Laravel, WordPress, Webflow, or Shopify build</span></li>
+                            <li class="flex items-start gap-2.5"><svg class="mt-0.5 h-4 w-4 shrink-0 text-[#FF5A1F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg><span>Brand-aligned design system &amp; micro-motion</span></li>
+                            <li class="flex items-start gap-2.5"><svg class="mt-0.5 h-4 w-4 shrink-0 text-[#FF5A1F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg><span>Technical SEO, sitemap &amp; performance tuning</span></li>
+                            <li class="flex items-start gap-2.5"><svg class="mt-0.5 h-4 w-4 shrink-0 text-[#FF5A1F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg><span>WhatsApp &amp; analytics integration</span></li>
+                        </ul>
+                        <button type="button" class="quote-tier-btn btn-ghost mt-8 w-full justify-center" data-tier="business" data-tier-label="Business">Get a quote</button>
+                    </article>
+
+                    <article class="glass-card tilt-card flex flex-col rounded-3xl border-[#FF5A1F]/50 p-7 ring-1 ring-[#FF5A1F]/25" data-reveal>
+                        <div class="flex items-center justify-between">
+                            <span class="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#FF5A1F]">premium</span>
+                            <span class="rounded-full bg-[#FF5A1F]/15 px-3 py-1 text-xs font-semibold text-[#FF5A1F]">Full-Stack Laravel</span>
+                        </div>
+                        <h3 class="font-display mt-5 text-2xl font-bold text-white">Premium</h3>
+                        <p class="mt-3 text-sm leading-relaxed text-[#B7A9C4]">Custom Laravel web application with tailored workflows, APIs, and admin control.</p>
+                        <ul class="mt-6 flex-1 space-y-3 border-t border-white/10 pt-6 text-sm text-[#E4D8EE]">
+                            <li class="flex items-start gap-2.5"><svg class="mt-0.5 h-4 w-4 shrink-0 text-[#FF5A1F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg><span>Custom PHP 8.2+ / Laravel architecture</span></li>
+                            <li class="flex items-start gap-2.5"><svg class="mt-0.5 h-4 w-4 shrink-0 text-[#FF5A1F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg><span>Optimised MySQL schema &amp; role-based auth</span></li>
+                            <li class="flex items-start gap-2.5"><svg class="mt-0.5 h-4 w-4 shrink-0 text-[#FF5A1F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg><span>RESTful APIs &amp; third-party integrations</span></li>
+                            <li class="flex items-start gap-2.5"><svg class="mt-0.5 h-4 w-4 shrink-0 text-[#FF5A1F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg><span>Security-hardened forms, headers &amp; admin CRUD</span></li>
+                            <li class="flex items-start gap-2.5"><svg class="mt-0.5 h-4 w-4 shrink-0 text-[#FF5A1F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg><span>Deployment runbook &amp; post-launch mentoring</span></li>
+                        </ul>
+                        <button type="button" class="quote-tier-btn btn-orange mt-8 w-full justify-center" data-tier="premium" data-tier-label="Premium">Get a quote</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="relative overflow-hidden py-24 sm:py-32">
+            <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:px-10">
+                <div class="lg:col-span-5" data-reveal>
+                    <p class="text-xs font-semibold uppercase tracking-[0.22em] text-[#FF5A1F]">Capabilities</p>
+                    <h2 class="font-display mt-3 text-3xl font-bold tracking-tight text-white sm:text-5xl">
+                        Technical Stack &amp; <span class="font-serif-accent text-[#F0475A]">Leadership Skills</span>
+                    </h2>
+                    <p class="mt-4 text-sm leading-relaxed text-[#B7A9C4] sm:text-base">
+                        Move your pointer across the 3D skill sphere to inspect core backend, frontend, AI-assisted engineering, and mentoring disciplines.
+                    </p>
+
+                    <div class="mt-7 flex flex-wrap gap-2">
+                        <span class="rounded-full border border-white/12 bg-white/5 px-3 py-1.5 text-xs font-medium text-[#E4D8EE] transition hover:border-[#FF5A1F]/50 hover:text-white">PHP</span>
+                        <span class="rounded-full border border-white/12 bg-white/5 px-3 py-1.5 text-xs font-medium text-[#E4D8EE] transition hover:border-[#FF5A1F]/50 hover:text-white">Laravel</span>
+                        <span class="rounded-full border border-white/12 bg-white/5 px-3 py-1.5 text-xs font-medium text-[#E4D8EE] transition hover:border-[#FF5A1F]/50 hover:text-white">MySQL</span>
+                        <span class="rounded-full border border-white/12 bg-white/5 px-3 py-1.5 text-xs font-medium text-[#E4D8EE] transition hover:border-[#FF5A1F]/50 hover:text-white">REST APIs</span>
+                        <span class="rounded-full border border-white/12 bg-white/5 px-3 py-1.5 text-xs font-medium text-[#E4D8EE] transition hover:border-[#FF5A1F]/50 hover:text-white">JavaScript</span>
+                        <span class="rounded-full border border-white/12 bg-white/5 px-3 py-1.5 text-xs font-medium text-[#E4D8EE] transition hover:border-[#FF5A1F]/50 hover:text-white">HTML5</span>
+                        <span class="rounded-full border border-white/12 bg-white/5 px-3 py-1.5 text-xs font-medium text-[#E4D8EE] transition hover:border-[#FF5A1F]/50 hover:text-white">CSS3</span>
+                        <span class="rounded-full border border-white/12 bg-white/5 px-3 py-1.5 text-xs font-medium text-[#E4D8EE] transition hover:border-[#FF5A1F]/50 hover:text-white">Node.js</span>
+                        <span class="rounded-full border border-white/12 bg-white/5 px-3 py-1.5 text-xs font-medium text-[#E4D8EE] transition hover:border-[#FF5A1F]/50 hover:text-white">Git</span>
+                        <span class="rounded-full border border-white/12 bg-white/5 px-3 py-1.5 text-xs font-medium text-[#E4D8EE] transition hover:border-[#FF5A1F]/50 hover:text-white">Agile/SDLC</span>
+                        <span class="rounded-full border border-white/12 bg-white/5 px-3 py-1.5 text-xs font-medium text-[#E4D8EE] transition hover:border-[#FF5A1F]/50 hover:text-white">AI-assisted development</span>
+                        <span class="rounded-full border border-white/12 bg-white/5 px-3 py-1.5 text-xs font-medium text-[#E4D8EE] transition hover:border-[#FF5A1F]/50 hover:text-white">AI coding agents</span>
+                        <span class="rounded-full border border-white/12 bg-white/5 px-3 py-1.5 text-xs font-medium text-[#E4D8EE] transition hover:border-[#FF5A1F]/50 hover:text-white">Team leadership</span>
+                        <span class="rounded-full border border-white/12 bg-white/5 px-3 py-1.5 text-xs font-medium text-[#E4D8EE] transition hover:border-[#FF5A1F]/50 hover:text-white">Mentoring</span>
+                        <span class="rounded-full border border-white/12 bg-white/5 px-3 py-1.5 text-xs font-medium text-[#E4D8EE] transition hover:border-[#FF5A1F]/50 hover:text-white">Workshop facilitation</span>
+                        <span class="rounded-full border border-white/12 bg-white/5 px-3 py-1.5 text-xs font-medium text-[#E4D8EE] transition hover:border-[#FF5A1F]/50 hover:text-white">Client communication</span>
+                        <span class="rounded-full border border-white/12 bg-white/5 px-3 py-1.5 text-xs font-medium text-[#E4D8EE] transition hover:border-[#FF5A1F]/50 hover:text-white">Project management</span>
+                        <span class="rounded-full border border-white/12 bg-white/5 px-3 py-1.5 text-xs font-medium text-[#E4D8EE] transition hover:border-[#FF5A1F]/50 hover:text-white">Graphic design</span>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7" data-reveal>
+                    <div class="glass-card relative flex h-[320px] items-center justify-center overflow-hidden rounded-[2rem] sm:h-[400px] lg:h-[460px]">
+                        <div
+                            id="skills-orbit"
+                            data-skills='["PHP","Laravel","MySQL","REST APIs","JavaScript","HTML5","CSS3","Node.js","Git","Agile/SDLC","AI-assisted development","AI coding agents","Team leadership","Mentoring","Workshop facilitation","Client communication","Project management","Graphic design"]'
+                            class="relative h-full w-full select-none"
+                            aria-hidden="true"
+                        ></div>
+                        <span class="pointer-events-none absolute bottom-4 right-5 text-[11px] uppercase tracking-widest text-[#B7A9C4]/70">Interactive 3D Orbit</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION & VOLUNTEERING -->
+        <section id="education" class="relative py-20 sm:py-28">
+            <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-12 lg:px-10">
+                <div class="lg:col-span-7" data-reveal>
+                    <p class="text-xs font-semibold uppercase tracking-[0.22em] text-[#FF5A1F]">Academic Background</p>
+                    <h2 class="font-display mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">Education</h2>
+
+                    <div class="mt-8 space-y-4">
+                        <article class="glass-card rounded-2xl p-5 sm:p-6">
+                            <div class="flex flex-wrap items-center justify-between gap-2">
+                                <h3 class="font-display text-lg font-semibold text-white">BS Information Technology (EQF Level 6)</h3>
+                                <span class="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium text-[#FF5A1F]">2021–2025</span>
+                            </div>
+                            <p class="mt-1.5 text-sm text-[#B7A9C4]">BUITEMS, Quetta</p>
+                        </article>
+
+                        <article class="glass-card rounded-2xl p-5 sm:p-6">
+                            <div class="flex flex-wrap items-center justify-between gap-2">
+                                <h3 class="font-display text-lg font-semibold text-white">Intermediate in Pre-Engineering</h3>
+                                <span class="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium text-[#FF5A1F]">2019–2021</span>
+                            </div>
+                            <p class="mt-1.5 text-sm text-[#B7A9C4]">Islamia Boys College, Quetta</p>
+                        </article>
+
+                        <article class="glass-card rounded-2xl p-5 sm:p-6">
+                            <div class="flex flex-wrap items-center justify-between gap-2">
+                                <h3 class="font-display text-lg font-semibold text-white">Matriculation (Science)</h3>
+                                <span class="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium text-[#FF5A1F]">2019</span>
+                            </div>
+                            <p class="mt-1.5 text-sm text-[#B7A9C4]">OPF Public School, Quetta</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5" data-reveal>
+                    <p class="text-xs font-semibold uppercase tracking-[0.22em] text-[#FF5A1F]">Community</p>
+                    <h2 class="font-display mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">Volunteering</h2>
+
+                    <ul class="glass-card mt-8 divide-y divide-white/10 rounded-2xl p-5 sm:p-6">
+                        <li class="flex items-start justify-between gap-4 py-3.5 first:pt-0 last:pb-0">
+                            <div>
+                                <p class="text-sm font-medium text-white">Volunteer, University Research Center (URC) event</p>
+                                <p class="text-xs text-[#B7A9C4]">BUITEMS</p>
+                            </div>
+                            <span class="shrink-0 text-xs font-semibold text-[#F0475A]">2025</span>
+                        </li>
+                        <li class="flex items-start justify-between gap-4 py-3.5 first:pt-0 last:pb-0">
+                            <div>
+                                <p class="text-sm font-medium text-white">National Disaster Preparedness Activity</p>
+                                <p class="text-xs text-[#B7A9C4]">Quetta</p>
+                            </div>
+                            <span class="shrink-0 text-xs font-semibold text-[#F0475A]">2024</span>
+                        </li>
+                        <li class="flex items-start justify-between gap-4 py-3.5 first:pt-0 last:pb-0">
+                            <div>
+                                <p class="text-sm font-medium text-white">Volunteer, European Union Awareness Event</p>
+                                <p class="text-xs text-[#B7A9C4]">Quetta</p>
+                            </div>
+                            <span class="shrink-0 text-xs font-semibold text-[#F0475A]">2023</span>
+                        </li>
+                        <li class="flex items-start justify-between gap-4 py-3.5 first:pt-0 last:pb-0">
+                            <div>
+                                <p class="text-sm font-medium text-white">Volunteer, Convocation 2022</p>
+                                <p class="text-xs text-[#B7A9C4]">BUITEMS</p>
+                            </div>
+                            <span class="shrink-0 text-xs font-semibold text-[#F0475A]">2022</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="relative overflow-hidden py-24 sm:py-32">
+            <div class="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:px-10">
+                <div class="flex flex-col justify-between lg:col-span-5" data-reveal>
+                    <div>
+                        <p class="text-xs font-semibold uppercase tracking-[0.22em] text-[#FF5A1F]">Contact</p>
+                        <h2 class="font-display mt-3 text-3xl font-bold tracking-tight text-white sm:text-5xl">
+                            Let's Build Something <span class="font-serif-accent text-[#F0475A]">Memorable</span>
+                        </h2>
+                        <p class="mt-4 text-sm leading-relaxed text-[#B7A9C4] sm:text-base">
+                            Need a custom Laravel platform, an agency site through Pixlo.pro, or a hands-on workshop? Send a message and I will respond promptly.
+                        </p>
+
+                        <div class="mt-7 flex flex-wrap gap-3">
+                            <!-- Optional direct buttons: uncomment and add your email or WhatsApp -->
+                            <!-- <a href="mailto:your@email.com" class="btn-ghost"><span>Email</span></a> -->
+                            <!-- <a href="https://wa.me/923001234567" target="_blank" rel="noopener noreferrer" class="btn-ghost"><span>WhatsApp</span></a> -->
+                            <a href="https://www.fiverr.com/haris_gd" target="_blank" rel="noopener noreferrer" class="btn-ghost"><span>Fiverr</span></a>
+                            <a href="https://pixlo.pro" target="_blank" rel="noopener noreferrer" class="btn-ghost"><span>pixlo.pro</span></a>
+                        </div>
+                    </div>
+
+                    <div class="glass-card relative mt-8 h-52 overflow-hidden rounded-3xl">
+                        <canvas id="contact-plane-canvas" class="h-full w-full" aria-hidden="true"></canvas>
+                        <span class="pointer-events-none absolute bottom-3 left-4 text-[11px] text-[#B7A9C4]">
+                            Submit the form to launch the animated paper plane
+                        </span>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7" data-reveal>
+                    <!-- Web3Forms live configuration (https://web3forms.com) -->
+                    <form id="contact-form" data-form-endpoint="https://api.web3forms.com/submit" data-direct-email="" class="glass-card rounded-[2rem] p-6 sm:p-9" novalidate>
+                        <input type="hidden" name="access_key" id="web3forms-key" value="9b988305-4ca6-431e-87c7-34f3ffb1cabc">
+                        <input type="hidden" name="subject" value="New Portfolio Inquiry — Muhammad IBAD">
+                        <input type="hidden" name="from_name" value="Muhammad IBAD Portfolio">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                        <div class="hidden" aria-hidden="true">
+                            <label for="contact-website">Website</label>
+                            <input type="text" id="contact-website" name="website" value="" tabindex="-1" autocomplete="off">
+                        </div>
+
+                        <input type="hidden" id="contact-tier" name="tier" value="">
+                        <div id="contact-feedback" class="mb-6 hidden rounded-2xl p-4 text-sm" role="status" aria-live="polite"></div>
+
+                        <div class="grid gap-5 sm:grid-cols-2">
+                            <div>
+                                <label for="contact-name" class="block text-xs font-semibold uppercase tracking-wider text-[#B7A9C4]">Your Name <span class="text-[#FF5A1F]">*</span></label>
+                                <input id="contact-name" name="name" type="text" required autocomplete="name" placeholder="Muhammad Ali" class="mt-2 min-h-[46px] w-full rounded-xl border border-white/15 bg-[#0B0610]/70 px-4 text-sm text-white placeholder:text-white/30 focus:border-[#FF5A1F] focus:outline-none">
+                            </div>
+
+                            <div>
+                                <label for="contact-email" class="block text-xs font-semibold uppercase tracking-wider text-[#B7A9C4]">Email Address <span class="text-[#FF5A1F]">*</span></label>
+                                <input id="contact-email" name="email" type="email" required autocomplete="email" placeholder="you@company.com" class="mt-2 min-h-[46px] w-full rounded-xl border border-white/15 bg-[#0B0610]/70 px-4 text-sm text-white placeholder:text-white/30 focus:border-[#FF5A1F] focus:outline-none">
+                            </div>
+                        </div>
+
+                        <div class="mt-5 grid gap-5 sm:grid-cols-2">
+                            <div>
+                                <label for="contact-project-type" class="block text-xs font-semibold uppercase tracking-wider text-[#B7A9C4]">Project Type</label>
+                                <select id="contact-project-type" name="project_type" class="mt-2 min-h-[46px] w-full rounded-xl border border-white/15 bg-[#0B0610]/90 px-4 text-sm text-white focus:border-[#FF5A1F] focus:outline-none">
+                                    <option value="">Select project type</option>
+                                    <option value="Landing Page">Landing Page</option>
+                                    <option value="Business Website">Business Website</option>
+                                    <option value="Custom Laravel App">Custom Laravel App</option>
+                                    <option value="AI / Automation">AI / Automation</option>
+                                    <option value="Training / Workshop">Training / Workshop</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="contact-budget" class="block text-xs font-semibold uppercase tracking-wider text-[#B7A9C4]">Budget Range (Optional)</label>
+                                <input id="contact-budget" name="budget" type="text" placeholder="e.g. $500 – $2,000" class="mt-2 min-h-[46px] w-full rounded-xl border border-white/15 bg-[#0B0610]/70 px-4 text-sm text-white placeholder:text-white/30 focus:border-[#FF5A1F] focus:outline-none">
+                            </div>
+                        </div>
+
+                        <div class="mt-5">
+                            <div class="flex items-center justify-between">
+                                <label for="contact-message" class="block text-xs font-semibold uppercase tracking-wider text-[#B7A9C4]">Project Details <span class="text-[#FF5A1F]">*</span></label>
+                                <span id="contact-tier-badge" class="hidden rounded-full bg-[#FF5A1F]/15 px-3 py-0.5 text-[11px] font-semibold text-[#FF5A1F]"></span>
+                            </div>
+                            <textarea id="contact-message" name="message" rows="5" required placeholder="Tell me about your goals, timeline, and what you're building..." class="mt-2 w-full rounded-xl border border-white/15 bg-[#0B0610]/70 p-4 text-sm text-white placeholder:text-white/30 focus:border-[#FF5A1F] focus:outline-none"></textarea>
+                        </div>
+
+                        <div class="mt-6 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
+                            <p class="text-xs text-[#B7A9C4]">Messages are delivered straight to Muhammad IBAD's email via Web3Forms.</p>
+                            <button type="submit" id="contact-submit" class="btn-orange w-full sm:w-auto"><span>Send Message</span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Single-Page Case Study Modal -->
+    <div id="project-modal" class="fixed inset-0 z-[9995] hidden items-center justify-center bg-black/80 p-4 backdrop-blur-md" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="glass-card relative max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-3xl p-6 sm:p-8">
+            <div class="flex items-start justify-between gap-4">
+                <div class="flex flex-wrap items-center gap-2">
+                    <span id="modal-category" class="rounded-full border border-[#FF5A1F]/40 bg-[#FF5A1F]/15 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#FF5A1F]"></span>
+                    <span id="modal-status" class="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium text-[#F6F1F8]"></span>
+                </div>
+                <button type="button" id="project-modal-close" class="glass-nav inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-white transition hover:border-[#FF5A1F]" aria-label="Close project details">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg>
+                </button>
+            </div>
+
+            <h3 id="modal-title" class="font-display mt-4 text-3xl font-bold text-white sm:text-4xl"></h3>
+            <p id="modal-summary" class="mt-3 text-base text-[#B7A9C4]"></p>
+
+            <div class="mt-6 overflow-hidden rounded-2xl bg-[#0B0610]">
+                <img id="modal-image" src="" alt="" class="aspect-[16/10] w-full object-cover">
+            </div>
+
+            <div class="mt-7 grid gap-6 lg:grid-cols-3">
+                <div class="lg:col-span-2">
+                    <h4 class="font-display text-lg font-semibold text-white">Project Overview</h4>
+                    <div id="modal-description" class="mt-3 space-y-3 whitespace-pre-line text-sm leading-relaxed text-[#B7A9C4]"></div>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                    <h4 class="font-display text-sm font-semibold text-white">Tech Stack</h4>
+                    <div id="modal-tags" class="mt-3 flex flex-wrap gap-2"></div>
+                    <div id="modal-actions" class="mt-6 flex flex-col gap-2.5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 bg-[#0B0610] py-10">
+        <div class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 px-4 sm:flex-row sm:items-center sm:px-6 lg:px-10">
+            <div>
+                <p class="font-display text-lg font-semibold text-[#F6F1F8]">© 2026 Muhammad IBAD.</p>
+                <p class="mt-1 text-sm text-[#B7A9C4]">Quetta, Pakistan · Built with HTML5, Tailwind CSS &amp; Vanilla JavaScript.</p>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-4 text-sm text-[#B7A9C4]">
+                <a href="https://pixlo.pro" target="_blank" rel="noopener noreferrer" class="transition hover:text-white">pixlo.pro</a>
+                <a href="https://www.fiverr.com/haris_gd" target="_blank" rel="noopener noreferrer" class="transition hover:text-white">Fiverr</a>
+                <a href="#contact" class="transition hover:text-white">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            // 1. Preloader
+            const preloader = document.getElementById('preloader');
+            const bar = document.getElementById('preloader-bar');
+            const percentEl = document.getElementById('preloader-percent');
+            if (preloader) {
+                if (reducedMotion) {
+                    preloader.remove();
+                } else {
+                    let cur = 0;
+                    const step = () => {
+                        cur += (100 - cur) * 0.18;
+                        const d = Math.min(100, Math.round(cur));
+                        if (percentEl) percentEl.textContent = d + '%';
+                        if (bar) bar.style.width = d + '%';
+                        if (cur >= 99) {
+                            if (percentEl) percentEl.textContent = '100%';
+                            if (bar) bar.style.width = '100%';
+                            preloader.style.transition = 'opacity 0.45s ease, visibility 0.45s ease';
+                            preloader.style.opacity = '0';
+                            preloader.style.visibility = 'hidden';
+                            setTimeout(() => preloader.remove(), 500);
+                            return;
+                        }
+                        requestAnimationFrame(step);
+                    };
+                    requestAnimationFrame(step);
+                }
+            }
+
+            // 2. Smooth anchor scrolling
+            document.querySelectorAll('a[href^="#"]').forEach((a) => {
+                a.addEventListener('click', (e) => {
+                    const id = a.getAttribute('href');
+                    if (!id || id === '#') return;
+                    const target = document.querySelector(id);
+                    if (!target) return;
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'start' });
+                });
+            });
+
+            // 3. Mobile menu
+            const toggle = document.getElementById('mobile-menu-toggle');
+            const panel = document.getElementById('mobile-menu-panel');
+            if (toggle && panel) {
+                const setOpen = (open) => {
+                    panel.classList.toggle('hidden', !open);
+                    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+                };
+                toggle.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
+                panel.querySelectorAll('.mobile-nav-link').forEach((l) => l.addEventListener('click', () => setOpen(false)));
+                document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
+            }
+
+            // 4. Custom cursor (desktop pointer only)
+            if (!reducedMotion && !window.matchMedia('(pointer: coarse)').matches) {
+                const dot = document.querySelector('.custom-cursor-dot');
+                const ring = document.querySelector('.custom-cursor-ring');
+                if (dot && ring) {
+                    let mx = -100, my = -100, rx = -100, ry = -100;
+                    window.addEventListener('pointermove', (e) => {
+                        mx = e.clientX;
+                        my = e.clientY;
+                        dot.style.transform = `translate3d(${mx}px, ${my}px, 0)`;
+                    }, { passive: true });
+                    const loopCursor = () => {
+                        rx += (mx - rx) * 0.16;
+                        ry += (my - ry) * 0.16;
+                        ring.style.transform = `translate3d(${rx}px, ${ry}px, 0)`;
+                        requestAnimationFrame(loopCursor);
+                    };
+                    requestAnimationFrame(loopCursor);
+                    document.querySelectorAll('a, button, [data-cursor="hover"]').forEach((el) => {
+                        el.addEventListener('mouseenter', () => ring.classList.add('is-hover'));
+                        el.addEventListener('mouseleave', () => ring.classList.remove('is-hover'));
+                    });
+                }
+
+                // 5. 3D tilt cards
+                document.querySelectorAll('.tilt-card').forEach((card) => {
+                    card.addEventListener('pointermove', (e) => {
+                        const r = card.getBoundingClientRect();
+                        const px = (e.clientX - r.left) / r.width;
+                        const py = (e.clientY - r.top) / r.height;
+                        card.style.setProperty('--mx', `${(px * 100).toFixed(1)}%`);
+                        card.style.setProperty('--my', `${(py * 100).toFixed(1)}%`);
+                        card.style.transform = `perspective(900px) rotateX(${((0.5 - py) * 9).toFixed(2)}deg) rotateY(${((px - 0.5) * 9).toFixed(2)}deg)`;
+                    });
+                    card.addEventListener('pointerleave', () => {
+                        card.style.transform = 'perspective(900px) rotateX(0deg) rotateY(0deg)';
+                    });
+                });
+            }
+
+            // 6. Hero Canvas drifting particles + Parallax Scroll for portrait, headline, experience boxes & divider
+            const hero = document.getElementById('hero');
+            const heroCanvas = document.getElementById('hero-canvas');
+            if (heroCanvas && !reducedMotion) {
+                const ctx = heroCanvas.getContext('2d');
+                const palette = ['rgba(194,26,110,0.8)', 'rgba(240,71,90,0.85)', 'rgba(255,90,31,0.85)'];
+                const count = window.innerWidth < 1024 ? 90 : 180;
+                const pts = [];
+                const resizeHero = () => {
+                    heroCanvas.width = hero.clientWidth;
+                    heroCanvas.height = hero.clientHeight;
+                };
+                resizeHero();
+                window.addEventListener('resize', resizeHero, { passive: true });
+                for (let i = 0; i < count; i++) {
+                    pts.push({
+                        x: Math.random() * heroCanvas.width,
+                        y: Math.random() * heroCanvas.height,
+                        r: 0.9 + Math.random() * 1.9,
+                        vy: 0.22 + (i % 5) * 0.08,
+                        vx: (Math.random() - 0.5) * 0.14,
+                        c: palette[i % palette.length],
+                    });
+                }
+                let heroVisible = true;
+                new IntersectionObserver((es) => { heroVisible = es[0]?.isIntersecting ?? true; }).observe(hero);
+                const drawParticles = () => {
+                    requestAnimationFrame(drawParticles);
+                    if (!heroVisible || document.hidden) return;
+                    ctx.clearRect(0, 0, heroCanvas.width, heroCanvas.height);
+                    for (const p of pts) {
+                        p.y -= p.vy;
+                        p.x += p.vx;
+                        if (p.y < -4) { p.y = heroCanvas.height + 4; p.x = Math.random() * heroCanvas.width; }
+                        ctx.beginPath();
+                        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                        ctx.fillStyle = p.c;
+                        ctx.fill();
+                    }
+                };
+                requestAnimationFrame(drawParticles);
+            }
+
+            if (!reducedMotion && hero) {
+                const portrait = document.getElementById('hero-fallback-portrait');
+                const leftEl = document.querySelector('[data-hero-left]');
+                const expEls = document.querySelectorAll('[data-hero-exp]');
+                const dividerTrack = document.getElementById('masked-divider-track');
+                const vectors = [
+                    { x: -34, y: -64, rot: -3 },
+                    { x: 26, y: -26, rot: 2.5 },
+                    { x: -24, y: 28, rot: -2 },
+                    { x: 32, y: 66, rot: 3 },
+                ];
+                const onScroll = () => {
+                    const rect = hero.getBoundingClientRect();
+                    const p = Math.min(1, Math.max(0, -rect.top / Math.max(rect.height * 0.85, 1)));
+                    if (portrait) {
+                        portrait.style.transform = `translate3d(${(-p * 34).toFixed(1)}px, ${(-p * 26).toFixed(1)}px, 0) scale(${(1 + p * 0.12).toFixed(3)})`;
+                    }
+                    if (leftEl) {
+                        leftEl.style.transform = `translate3d(${(-p * 40).toFixed(1)}px, ${(-p * 42).toFixed(1)}px, 0)`;
+                        leftEl.style.opacity = String(Math.max(0.2, 1 - p * 0.78).toFixed(2));
+                    }
+                    expEls.forEach((card, i) => {
+                        const v = vectors[i % vectors.length];
+                        card.style.transform = `translate3d(${(v.x * p).toFixed(1)}px, ${(v.y * p).toFixed(1)}px, 0) rotate(${(v.rot * p).toFixed(2)}deg) scale(${(1 - p * 0.06).toFixed(3)})`;
+                        card.style.opacity = String(Math.max(0.25, 1 - p * 0.7).toFixed(2));
+                    });
+                    if (dividerTrack) {
+                        const dRect = dividerTrack.parentElement.getBoundingClientRect();
+                        const dp = Math.min(1, Math.max(0, (window.innerHeight - dRect.top) / (window.innerHeight + dRect.height)));
+                        dividerTrack.style.transform = `translate3d(${(-dp * 24).toFixed(2)}%, 0, 0)`;
+                    }
+                };
+                window.addEventListener('scroll', onScroll, { passive: true });
+                onScroll();
+            }
+
+            // 7. Reveal on scroll
+            const reveals = document.querySelectorAll('[data-reveal]');
+            if (reducedMotion || !('IntersectionObserver' in window)) {
+                reveals.forEach((el) => { el.style.opacity = '1'; });
+            } else {
+                reveals.forEach((el) => {
+                    el.style.opacity = '0';
+                    el.style.transform = 'translateY(32px)';
+                    el.style.transition = 'opacity 0.75s cubic-bezier(0.22,1,0.36,1), transform 0.75s cubic-bezier(0.22,1,0.36,1)';
+                });
+                const rio = new IntersectionObserver((entries, obs) => {
+                    entries.forEach((entry) => {
+                        if (!entry.isIntersecting) return;
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        obs.unobserve(entry.target);
+                    });
+                }, { threshold: 0.12 });
+                reveals.forEach((el) => rio.observe(el));
+            }
+
+            // 8. 3D Skills Sphere
+            const orbit = document.getElementById('skills-orbit');
+            if (orbit) {
+                let skills = [];
+                try { skills = JSON.parse(orbit.dataset.skills || '[]'); } catch { skills = []; }
+                const nodes = skills.map((label, i) => {
+                    const phi = Math.acos(-1 + (2 * (i + 0.5)) / skills.length);
+                    const theta = Math.sqrt(skills.length * Math.PI) * phi;
+                    const el = document.createElement('span');
+                    el.textContent = label;
+                    el.className = 'absolute top-1/2 left-1/2 whitespace-nowrap rounded-full border border-white/15 bg-[#150B1D]/85 px-3.5 py-1.5 text-xs font-semibold text-[#F6F1F8] shadow-lg backdrop-blur transition-colors will-change-transform';
+                    orbit.appendChild(el);
+                    return { el, x: Math.cos(theta) * Math.sin(phi), y: Math.sin(theta) * Math.sin(phi), z: Math.cos(phi) };
+                });
+                let ax = 0.004, ay = 0.006, vis = false;
+                const drawOrbit = () => {
+                    const r = Math.min(orbit.clientWidth, orbit.clientHeight) * 0.36;
+                    const cx = Math.cos(ax), sx = Math.sin(ax), cy = Math.cos(ay), sy = Math.sin(ay);
+                    nodes.forEach((n) => {
+                        if (!reducedMotion) {
+                            const y1 = n.y * cx - n.z * sx;
+                            const z1 = n.z * cx + n.y * sx;
+                            const x1 = n.x * cy - z1 * sy;
+                            const z2 = z1 * cy + n.x * sy;
+                            n.x = x1; n.y = y1; n.z = z2;
+                        }
+                        const d = (n.z + 1.4) / 2.4;
+                        n.el.style.transform = `translate3d(calc(-50% + ${(n.x * r).toFixed(1)}px), calc(-50% + ${(n.y * r).toFixed(1)}px), 0) scale(${(0.72 + d * 0.45).toFixed(3)})`;
+                        n.el.style.opacity = (0.3 + d * 0.7).toFixed(2);
+                        n.el.style.zIndex = String(Math.round(d * 100));
+                        n.el.style.borderColor = d > 0.78 ? 'rgba(255,90,31,0.55)' : 'rgba(255,255,255,0.14)';
+                    });
+                };
+                drawOrbit();
+                if (!reducedMotion) {
+                    orbit.addEventListener('pointermove', (e) => {
+                        const rect = orbit.getBoundingClientRect();
+                        ay = ((e.clientX - rect.left) / rect.width - 0.5) * 0.032;
+                        ax = -((e.clientY - rect.top) / rect.height - 0.5) * 0.032;
+                    }, { passive: true });
+                    new IntersectionObserver((es) => { vis = es[0]?.isIntersecting ?? false; }).observe(orbit);
+                    const tickOrbit = () => { requestAnimationFrame(tickOrbit); if (vis && !document.hidden) drawOrbit(); };
+                    requestAnimationFrame(tickOrbit);
+                }
+            }
+
+            // 9. Project Category Filters
+            const filterBtns = document.querySelectorAll('.project-filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            filterBtns.forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    const filter = btn.dataset.filter || 'all';
+                    filterBtns.forEach((b) => {
+                        const active = b === btn;
+                        b.setAttribute('aria-pressed', active ? 'true' : 'false');
+                        b.className = active
+                            ? 'project-filter-btn rounded-full bg-[#FF5A1F] px-4 py-2 text-xs font-bold text-[#0B0610] transition'
+                            : 'project-filter-btn rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-medium text-[#B7A9C4] transition hover:border-white/35 hover:text-white';
+                    });
+                    projectCards.forEach((card) => {
+                        card.classList.toggle('hidden', !(filter === 'all' || card.dataset.category === filter));
+                    });
+                });
+            });
+
+            // 10. Single-File Project Case Study Modal
+            const projectData = {
+                'asaan-ilaaj': {
+                    title: 'Asaan Ilaaj',
+                    category: 'AI',
+                    status: 'Built',
+                    image: 'images/project-asaan-ilaaj.jpg',
+                    summary: 'Multilingual Android & AI healthcare app ("Smart Diagnosis") for Pakistan: symptom assessment, Drug Guard interaction checker, medical records, and 6-language support (Urdu, Sindhi, Pashto, Balochi, Persian, English).',
+                    description: 'Asaan Ilaaj ("Smart Diagnosis — Health in Your Hands") bridges healthcare accessibility gaps across Pakistan through multilingual AI triage and medication safety checks.\n\nCore modules documented in the v1.0 User Manual:\n• AI-Powered Symptom Checker: step-by-step symptom entry, adaptive follow-up questions (e.g. severity levels), urgency triage warnings, ranked possible conditions with probability indicators, and savable assessments.\n• Drug Guard (Interaction Analysis): multi-medication list builder with adverse reaction reports, observed reactions, and safety disclaimers.\n• 6-Language Native Support: switchable anytime across Urdu, Sindhi, Pashto, Balochi, Persian, and English.\n• Health Record & Safety Guidance: persistent assessment history with specialist advice, record deletion, and explicit emergency red-flag safety guidelines.',
+                    tags: ['Node.js', 'Infermedica API', 'OpenFDA API', 'Google Cloud Translation'],
+                    pdfUrl: 'User manual Assan Ilaaj (1).pdf',
+                },
+                'educore': {
+                    title: 'EduCore',
+                    category: 'Laravel',
+                    status: 'Built',
+                    image: 'images/project-educore.jpg',
+                    summary: 'Multi-tenant School LMS, subdomain-based tenancy, six roles with full CRUD, glassmorphism UI.',
+                    description: 'EduCore is a full-featured multi-tenant Learning Management System built on Laravel and MySQL.\n\nEach school operates on an isolated subdomain tenant with role-based access control across six distinct roles, complete CRUD workflows for academics and administration, and a modern glassmorphism interface.',
+                    tags: ['Laravel', 'MySQL'],
+                },
+                'pixlo-pro': {
+                    title: 'Pixlo.pro',
+                    category: 'Web',
+                    status: 'Live',
+                    image: 'images/project-pixlo.jpg',
+                    summary: 'Agency website & client delivery across web development, branding, and SEO.',
+                    description: 'Pixlo.pro is the software and creative agency co-founded by Muhammad IBAD and Muhammad Saad in Quetta.\n\nDelivering conversion-focused websites, brand identities, SEO foundations, and custom web applications across Starter, Business, and Premium tiers.',
+                    tags: ['Laravel', 'WordPress', 'Shopify', 'Webflow', 'Framer'],
+                    liveUrl: 'https://pixlo.pro',
+                },
+                'stockflow': {
+                    title: 'StockFlow',
+                    category: 'Laravel',
+                    status: 'In Development',
+                    image: 'images/project-stockflow.jpg',
+                    summary: 'POS + Inventory + Invoicing system built for fast retail operations.',
+                    description: 'StockFlow streamlines point-of-sale billing, stock tracking, supplier orders, and printable invoicing in a clean Laravel and MySQL application designed for daily retail speed.',
+                    tags: ['Laravel', 'MySQL'],
+                },
+                'budget-management-system': {
+                    title: 'Budget Management System',
+                    category: 'Laravel',
+                    status: 'Built',
+                    image: 'images/project-budget.jpg',
+                    summary: 'Local-network budget tracker usable from phone over WiFi.',
+                    description: 'A lightweight personal finance and expense tracker built with Laravel and SQLite that runs on a local network so household or team expenses can be logged instantly from any phone on the same WiFi.',
+                    tags: ['Laravel', 'SQLite'],
+                },
+                'ai-content-repurposing-tool': {
+                    title: 'AI Content Repurposing Tool',
+                    category: 'AI',
+                    status: 'Concept',
+                    image: 'images/project-ai-repurposer.jpg',
+                    summary: 'Turns long videos into short-form content (transcribe, clip, caption).',
+                    description: 'An automated media pipeline combining Laravel orchestration with Whisper transcription, Gemini API highlight detection, yt-dlp ingestion, and FFmpeg video slicing and burned-in captions.',
+                    tags: ['Laravel', 'Whisper', 'FFmpeg', 'yt-dlp', 'Gemini API'],
+                },
+            };
+
+            const modal = document.getElementById('project-modal');
+            const modalClose = document.getElementById('project-modal-close');
+            const openProjectModal = (slug) => {
+                const p = projectData[slug];
+                if (!p || !modal) return;
+                document.getElementById('modal-category').textContent = p.category;
+                document.getElementById('modal-status').textContent = p.status;
+                document.getElementById('modal-title').textContent = p.title;
+                document.getElementById('modal-summary').textContent = p.summary;
+                const img = document.getElementById('modal-image');
+                img.src = p.image;
+                img.alt = p.title + ' showcase mockup';
+                document.getElementById('modal-description').textContent = p.description;
+
+                const tagsEl = document.getElementById('modal-tags');
+                tagsEl.innerHTML = '';
+                p.tags.forEach((t) => {
+                    const span = document.createElement('span');
+                    span.className = 'rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium text-[#F6F1F8]';
+                    span.textContent = t;
+                    tagsEl.appendChild(span);
+                });
+
+                const actionsEl = document.getElementById('modal-actions');
+                actionsEl.innerHTML = '';
+                if (p.liveUrl) {
+                    actionsEl.innerHTML += `<a href="${p.liveUrl}" target="_blank" rel="noopener noreferrer" class="btn-orange w-full justify-center"><span>Visit Live Site</span></a>`;
+                }
+                if (p.pdfUrl) {
+                    actionsEl.innerHTML += `<a href="${p.pdfUrl}" target="_blank" rel="noopener noreferrer" class="btn-orange w-full justify-center"><span>View User Manual (PDF)</span></a>`;
+                }
+                actionsEl.innerHTML += `<a href="#contact" class="btn-ghost w-full justify-center" data-modal-contact><span>Discuss a Similar Build</span></a>`;
+                actionsEl.querySelector('[data-modal-contact]')?.addEventListener('click', closeModal);
+
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            };
+            const closeModal = () => {
+                if (!modal) return;
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = '';
+            };
+            document.querySelectorAll('[data-project-open]').forEach((el) => {
+                el.addEventListener('click', () => openProjectModal(el.dataset.projectOpen));
+            });
+            modalClose?.addEventListener('click', closeModal);
+            modal?.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+            document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+            // 11. Quote Tier Buttons
+            const tierInput = document.getElementById('contact-tier');
+            const tierBadge = document.getElementById('contact-tier-badge');
+            const typeSelect = document.getElementById('contact-project-type');
+            const contactSection = document.getElementById('contact');
+            const messageInput = document.getElementById('contact-message');
+            const tierMap = { starter: 'Landing Page', business: 'Business Website', premium: 'Custom Laravel App' };
+            document.querySelectorAll('.quote-tier-btn').forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    const tier = btn.dataset.tier || '';
+                    const label = btn.dataset.tierLabel || tier;
+                    if (tierInput) tierInput.value = tier;
+                    if (tierBadge) { tierBadge.textContent = label + ' tier selected'; tierBadge.classList.remove('hidden'); }
+                    if (typeSelect && tierMap[tier]) typeSelect.value = tierMap[tier];
+                    contactSection?.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth' });
+                    setTimeout(() => messageInput?.focus(), 450);
+                });
+            });
+
+            // 12. Animated Contact Paper Plane Canvas
+            const planeCanvas = document.getElementById('contact-plane-canvas');
+            let launchPlane = () => {};
+            if (planeCanvas) {
+                const pctx = planeCanvas.getContext('2d');
+                let launching = false, lp = 0, t = 0;
+                const resizePlane = () => {
+                    planeCanvas.width = planeCanvas.parentElement.clientWidth;
+                    planeCanvas.height = planeCanvas.parentElement.clientHeight;
+                };
+                resizePlane();
+                window.addEventListener('resize', resizePlane, { passive: true });
+                launchPlane = () => { if (!reducedMotion) { launching = true; lp = 0; } };
+                const drawPlane = () => {
+                    requestAnimationFrame(drawPlane);
+                    const w = planeCanvas.width, h = planeCanvas.height;
+                    pctx.clearRect(0, 0, w, h);
+                    t += 0.03;
+                    let cx = w * 0.5, cy = h * 0.48 + Math.sin(t * 1.4) * 8, rot = -0.1 + Math.sin(t) * 0.06, sc = 1;
+                    if (launching) {
+                        lp += 0.025;
+                        cx += lp * w * 0.65;
+                        cy -= Math.sin(lp * Math.PI) * 65 + lp * 40;
+                        rot = -0.35;
+                        sc = Math.max(0.2, 1 - lp * 0.6);
+                        if (lp > 1.2) launching = false;
+                    }
+                    pctx.save();
+                    pctx.translate(cx, cy);
+                    pctx.rotate(rot);
+                    pctx.scale(sc, sc);
+                    const grad = pctx.createLinearGradient(-45, -20, 55, 20);
+                    grad.addColorStop(0, '#F6F1F8');
+                    grad.addColorStop(1, '#FF5A1F');
+                    pctx.beginPath();
+                    pctx.moveTo(54, 0);
+                    pctx.lineTo(-42, -26);
+                    pctx.lineTo(-22, -4);
+                    pctx.closePath();
+                    pctx.fillStyle = grad;
+                    pctx.fill();
+                    pctx.beginPath();
+                    pctx.moveTo(54, 0);
+                    pctx.lineTo(-22, -4);
+                    pctx.lineTo(-28, 22);
+                    pctx.closePath();
+                    pctx.fillStyle = '#C21A6E';
+                    pctx.fill();
+                    pctx.beginPath();
+                    pctx.moveTo(54, 0);
+                    pctx.lineTo(-42, 20);
+                    pctx.lineTo(-22, -4);
+                    pctx.closePath();
+                    pctx.fillStyle = 'rgba(246,241,248,0.88)';
+                    pctx.fill();
+                    pctx.restore();
+                };
+                requestAnimationFrame(drawPlane);
+            }
+
+            // 13. Contact Form Handler
+            const form = document.getElementById('contact-form');
+            const feedback = document.getElementById('contact-feedback');
+            const submitBtn = document.getElementById('contact-submit');
+            if (form && feedback && submitBtn) {
+                const showMsg = (ok, txt) => {
+                    feedback.className = ok
+                        ? 'mb-6 rounded-2xl border border-emerald-400/35 bg-emerald-500/15 p-4 text-sm text-emerald-200'
+                        : 'mb-6 rounded-2xl border border-rose-400/35 bg-rose-500/15 p-4 text-sm text-rose-200';
+                    feedback.textContent = txt;
+                    feedback.classList.remove('hidden');
+                };
+                form.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    feedback.classList.add('hidden');
+                    if (form.querySelector('#contact-website')?.value?.trim()) {
+                        showMsg(true, 'Thank you! Your message has been received.');
+                        form.reset();
+                        return;
+                    }
+                    const name = form.querySelector('#contact-name')?.value?.trim() || '';
+                    const email = form.querySelector('#contact-email')?.value?.trim() || '';
+                    const message = form.querySelector('#contact-message')?.value?.trim() || '';
+                    const projectType = form.querySelector('#contact-project-type')?.value?.trim() || '';
+                    const budget = form.querySelector('#contact-budget')?.value?.trim() || '';
+                    const tier = form.querySelector('#contact-tier')?.value?.trim() || '';
+
+                    if (name.length < 2) { showMsg(false, 'Please enter your name.'); return; }
+                    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showMsg(false, 'Please enter a valid email address.'); return; }
+                    if (message.length < 10) { showMsg(false, 'Please write a short message (at least 10 characters).'); return; }
+
+                    const endpoint = (form.dataset.formEndpoint || '').trim();
+                    const directEmail = (form.dataset.directEmail || '').trim();
+                    if (endpoint) {
+                        const accessKey = form.querySelector('#web3forms-key')?.value?.trim() || '';
+                        if (endpoint.includes('web3forms.com') && (!accessKey || accessKey === 'YOUR_WEB3FORMS_ACCESS_KEY')) {
+                            showMsg(false, 'Web3Forms key not set yet — paste your Access Key into #web3forms-key in index.html.');
+                            return;
+                        }
+                        submitBtn.disabled = true;
+                        const orig = submitBtn.innerHTML;
+                        submitBtn.textContent = 'Sending...';
+                        try {
+                            const payload = new FormData(form);
+                            payload.delete('website');
+                            const res = await fetch(endpoint, { method: 'POST', headers: { Accept: 'application/json' }, body: payload });
+                            const json = await res.json().catch(() => ({}));
+                            if (res.ok && json.success !== false) {
+                                showMsg(true, 'Message sent successfully! I will get back to you soon.');
+                                form.reset();
+                                document.getElementById('contact-tier-badge')?.classList.add('hidden');
+                                launchPlane();
+                            } else {
+                                showMsg(false, json.message || 'Submission failed. Please try again.');
+                            }
+                        } catch {
+                            showMsg(false, 'Network error. Please try again.');
+                        } finally {
+                            submitBtn.disabled = false;
+                            submitBtn.innerHTML = orig;
+                        }
+                        return;
+                    }
+
+                    launchPlane();
+                    if (directEmail) {
+                        const subj = encodeURIComponent(`Portfolio Inquiry from ${name}${projectType ? ` — ${projectType}` : ''}`);
+                        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nProject Type: ${projectType}\nTier: ${tier}\nBudget: ${budget}\n\nMessage:\n${message}`);
+                        window.location.href = `mailto:${directEmail}?subject=${subj}&body=${body}`;
+                        showMsg(true, 'Opening your email app with the pre-filled inquiry.');
+                        return;
+                    }
+
+                    showMsg(true, 'Form validated! Add data-form-endpoint or data-direct-email on #contact-form to receive messages directly.');
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
