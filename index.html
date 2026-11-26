@@ -103,16 +103,17 @@
         </div>
     </header>
 
-    <!-- Persistent Full-Page Atmospheric Background + Particles -->
+    <!-- Persistent Full-Page Atmospheric Background + 3D Scroll Lines + Particles -->
     <div id="ambient-stage" aria-hidden="true">
         <div class="hero-gradient absolute inset-0"></div>
         <div id="ambient-glow"></div>
         <div class="film-grain absolute inset-0"></div>
         <div class="hero-vignette absolute inset-0"></div>
+        <canvas id="lines-canvas" class="absolute inset-0 h-full w-full" style="opacity:0;will-change:opacity;"></canvas>
         <canvas id="hero-canvas" class="absolute inset-0 h-full w-full"></canvas>
     </div>
 
-    <!-- Scroll-Choreographed Portrait Layer (Center -> Right -> Left) -->
+    <!-- Page-1 Portrait Layer (dissolves out after Hero into 3D lines) -->
     <div id="portrait-stage" aria-hidden="true">
         <div id="portrait-actor">
             <picture>
@@ -1165,8 +1166,154 @@
                 requestAnimationFrame(drawParticles);
             }
 
-            // 7. GSAP ScrollTrigger Choreography (Background + Portrait Right -> Left + Reveals)
+            // 7. Portrait Exit After Hero -> Morph Into 3D Animated Lines Driven by Scroll
             const portraitActor = document.getElementById('portrait-actor');
+            const linesCanvas = document.getElementById('lines-canvas');
+            const scrollState = { progress: 0, linesVisibility: 0 };
+
+            // 3D Kinetic Ribbon + Wireframe Helix Lines Renderer (scroll & pointer reactive)
+            if (linesCanvas && !reducedMotion) {
+                const lctx = linesCanvas.getContext('2d');
+                const resizeLines = () => {
+                    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+                    linesCanvas.width = Math.floor(window.innerWidth * dpr);
+                    linesCanvas.height = Math.floor(window.innerHeight * dpr);
+                    lctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+                };
+                resizeLines();
+                window.addEventListener('resize', resizeLines, { passive: true });
+
+                const ribbonColors = [
+                    'rgba(255, 90, 31, 0.42)',
+                    'rgba(240, 71, 90, 0.40)',
+                    'rgba(194, 26, 110, 0.44)',
+                    'rgba(246, 241, 248, 0.22)',
+                ];
+
+                const project3D = (x, y, z, w, h, fov) => {
+                    const scale = fov / Math.max(fov + z, 80);
+                    return { x: w * 0.5 + x * scale, y: h * 0.5 + y * scale, s: scale, z };
+                };
+
+                const rotPt = (x, y, z, rx, ry, rz) => {
+                    // Rotate Y
+                    const cy = Math.cos(ry), sy = Math.sin(ry);
+                    const x1 = x * cy - z * sy;
+                    const z1 = z * cy + x * sy;
+                    // Rotate X
+                    const cx = Math.cos(rx), sx = Math.sin(rx);
+                    const y2 = y * cx - z1 * sx;
+                    const z2 = z1 * cx + y * sx;
+                    // Rotate Z
+                    const cz = Math.cos(rz), sz = Math.sin(rz);
+                    return { x: x1 * cz - y2 * sz, y: x1 * sz + y2 * cz, z: z2 };
+                };
+
+                let time = 0;
+                let smoothScroll = 0;
+                const draw3DLines = () => {
+                    requestAnimationFrame(draw3DLines);
+                    if (document.hidden || scrollState.linesVisibility <= 0.01) return;
+
+                    const w = window.innerWidth;
+                    const h = window.innerHeight;
+                    lctx.clearRect(0, 0, w, h);
+
+                    time += 0.014;
+                    smoothScroll += (scrollState.progress - smoothScroll) * 0.1;
+
+                    const sp = smoothScroll;
+                    const fov = Math.max(w, h) * 0.85;
+                    const scaleBase = Math.min(w, h) * (w >= 1024 ? 0.38 : 0.42);
+
+                    // Horizontal sweep with scroll: start right (+), cross left (-), settle gentle right
+                    const sweepOffset = Math.sin(sp * Math.PI * 1.9) * (w >= 1024 ? Math.min(w * 0.23, 330) : w * 0.14);
+                    const rx = 0.35 + sp * 1.45 + pointerY * 0.22;
+                    const ry = time * 0.35 + sp * Math.PI * 2.6 + pointerX * 0.28;
+                    const rz = -0.22 + Math.sin(sp * Math.PI * 2) * 0.45;
+
+                    lctx.lineCap = 'round';
+                    lctx.lineJoin = 'round';
+
+                    // Structure A: 14 flowing 3D twisted ribbon wave splines
+                    const numRibbons = w < 768 ? 9 : 14;
+                    const segments = 38;
+                    for (let r = 0; r < numRibbons; r++) {
+                        const rNorm = r / (numRibbons - 1) - 0.5;
+                        lctx.beginPath();
+                        for (let s = 0; s <= segments; s++) {
+                            const t = s / segments;
+                            const u = (t - 0.5) * Math.PI * 2.5;
+                            const wave = Math.sin(u * 1.6 + time * 1.4 + r * 0.42 + sp * 7.5);
+                            const spiral = Math.cos(u * 1.15 - time * 1.1 + r * 0.35 + sp * 5.2);
+
+                            const lx = (t - 0.5) * w * 1.18;
+                            const ly = rNorm * scaleBase * 0.92 + wave * (scaleBase * (0.28 + 0.14 * Math.sin(sp * Math.PI)));
+                            const lz = spiral * scaleBase * 0.72 + rNorm * 110;
+
+                            const rp = rotPt(lx, ly, lz, rx * 0.45, ry * 0.28, rz * 0.5);
+                            const p = project3D(rp.x + sweepOffset * 0.45, rp.y, rp.z, w, h, fov);
+                            if (s === 0) lctx.moveTo(p.x, p.y);
+                            else lctx.lineTo(p.x, p.y);
+                        }
+                        lctx.strokeStyle = ribbonColors[r % ribbonColors.length];
+                        lctx.lineWidth = r % 4 === 0 ? 1.75 : 1.05;
+                        lctx.stroke();
+                    }
+
+                    // Structure B: Sculptural 3D orbital wireframe rings + intersecting ribs
+                    const ringCount = 5;
+                    const ringSegs = 44;
+                    const radius = scaleBase * (0.72 + Math.sin(sp * Math.PI) * 0.16);
+                    const ringNodes = [];
+
+                    for (let k = 0; k < ringCount; k++) {
+                        const tiltX = k * 0.55 + rx;
+                        const tiltY = k * 0.78 + ry;
+                        lctx.beginPath();
+                        for (let s = 0; s <= ringSegs; s++) {
+                            const a = (s / ringSegs) * Math.PI * 2;
+                            const ex = Math.cos(a) * radius;
+                            const ey = Math.sin(a) * radius * (0.58 + 0.2 * Math.sin(time + k));
+                            const ez = Math.sin(a * 2 + sp * 6 + k) * (radius * 0.22);
+
+                            const rp = rotPt(ex, ey, ez, tiltX, tiltY, rz);
+                            const p = project3D(rp.x + sweepOffset, rp.y, rp.z, w, h, fov);
+                            if (s === 0) lctx.moveTo(p.x, p.y);
+                            else lctx.lineTo(p.x, p.y);
+
+                            if (s % 11 === 0 && s < ringSegs) {
+                                ringNodes.push(p);
+                            }
+                        }
+                        lctx.strokeStyle = k === 0 ? 'rgba(255, 90, 31, 0.55)' : (k % 2 === 0 ? 'rgba(240, 71, 90, 0.36)' : 'rgba(246, 241, 248, 0.22)');
+                        lctx.lineWidth = k === 0 ? 1.8 : 1.1;
+                        lctx.stroke();
+                    }
+
+                    // Connect opposite 3D constellation nodes with subtle hairline rays
+                    lctx.beginPath();
+                    for (let i = 0; i < ringNodes.length; i += 2) {
+                        const a = ringNodes[i];
+                        const b = ringNodes[(i + 5) % ringNodes.length];
+                        if (!a || !b) continue;
+                        lctx.moveTo(a.x, a.y);
+                        lctx.lineTo(b.x, b.y);
+                    }
+                    lctx.strokeStyle = 'rgba(255, 90, 31, 0.16)';
+                    lctx.lineWidth = 0.85;
+                    lctx.stroke();
+
+                    for (const nd of ringNodes) {
+                        lctx.beginPath();
+                        lctx.arc(nd.x, nd.y, Math.max(1.2, 2.4 * nd.s), 0, Math.PI * 2);
+                        lctx.fillStyle = 'rgba(255, 90, 31, 0.65)';
+                        lctx.fill();
+                    }
+                };
+                requestAnimationFrame(draw3DLines);
+            }
+
             const initScrollChoreography = () => {
                 if (reducedMotion) {
                     document.querySelectorAll('[data-reveal]').forEach((el) => { el.style.opacity = '1'; });
@@ -1177,92 +1324,70 @@
                     const { gsap, ScrollTrigger } = window;
                     gsap.registerPlugin(ScrollTrigger);
 
+                    // Page 1 Hero Exit: Portrait fades out completely after Hero while 3D Lines morph IN
+                    if (hero && portraitActor) {
+                        gsap.to(portraitActor, {
+                            x: () => (window.innerWidth >= 1024 ? Math.min(window.innerWidth * 0.14, 180) : 0),
+                            y: -28,
+                            scale: 0.84,
+                            autoAlpha: 0,
+                            ease: 'power2.inOut',
+                            scrollTrigger: {
+                                trigger: hero,
+                                start: 'top top',
+                                end: 'bottom 25%',
+                                scrub: 0.65,
+                                invalidateOnRefresh: true,
+                            },
+                        });
+                    }
+
+                    // Fade in 3D animated lines right as Hero leaves viewport & keep active down the entire page
+                    if (hero && linesCanvas) {
+                        gsap.to(linesCanvas, {
+                            opacity: 1,
+                            ease: 'power1.out',
+                            scrollTrigger: {
+                                trigger: hero,
+                                start: '25% top',
+                                end: 'bottom 15%',
+                                scrub: 0.6,
+                                onUpdate: (self) => {
+                                    scrollState.linesVisibility = self.progress;
+                                },
+                            },
+                        });
+                    }
+
+                    // Master scroll progress tracker for 3D animated lines across main content
+                    if (mainEl) {
+                        ScrollTrigger.create({
+                            trigger: mainEl,
+                            start: 'top top',
+                            end: 'bottom bottom',
+                            onUpdate: (self) => {
+                                scrollState.progress = self.progress;
+                            },
+                        });
+                    }
+
+                    if (ambientGlow && mainEl) {
+                        gsap.timeline({
+                            scrollTrigger: {
+                                trigger: mainEl,
+                                start: 'top top',
+                                end: 'bottom bottom',
+                                scrub: 1.4,
+                                invalidateOnRefresh: true,
+                            },
+                        })
+                            .to(ambientGlow, { x: () => window.innerWidth * 0.24, y: () => window.innerHeight * 0.08, scale: 1.12, duration: 0.35 })
+                            .to(ambientGlow, { x: () => -window.innerWidth * 0.26, y: () => window.innerHeight * 0.18, scale: 1.2, duration: 0.35 })
+                            .to(ambientGlow, { x: 0, y: () => window.innerHeight * 0.06, scale: 0.95, duration: 0.30 });
+                    }
+
                     const mm = gsap.matchMedia();
-
-                    // Desktop & Wide Screens: full Right -> Left -> Settle choreography scaled to viewport
                     mm.add('(min-width: 1024px)', () => {
-                        const rightX = () => Math.min(window.innerWidth * 0.27, 420);
-                        const leftX = () => -Math.min(window.innerWidth * 0.27, 420);
-
-                        if (portraitActor && mainEl) {
-                            const stageTl = gsap.timeline({
-                                scrollTrigger: {
-                                    trigger: mainEl,
-                                    start: 'top top',
-                                    end: 'bottom bottom',
-                                    scrub: 1.05,
-                                    invalidateOnRefresh: true,
-                                },
-                            });
-
-                            stageTl
-                                // Hero -> About: glide to the RIGHT & scale proportionally
-                                .to(portraitActor, {
-                                    x: rightX,
-                                    y: () => window.innerHeight * 0.04,
-                                    scale: 0.78,
-                                    rotation: 2.5,
-                                    opacity: 0.74,
-                                    ease: 'power1.inOut',
-                                    duration: 0.22,
-                                })
-                                // About -> Experience: hold right with subtle depth drift
-                                .to(portraitActor, {
-                                    x: () => rightX() * 1.05,
-                                    y: () => window.innerHeight * 0.02,
-                                    scale: 0.73,
-                                    rotation: 1.8,
-                                    opacity: 0.58,
-                                    ease: 'none',
-                                    duration: 0.16,
-                                })
-                                // Experience -> Projects: sweep smoothly across to the LEFT
-                                .to(portraitActor, {
-                                    x: leftX,
-                                    y: () => window.innerHeight * 0.05,
-                                    scale: 0.70,
-                                    rotation: -2.8,
-                                    opacity: 0.64,
-                                    ease: 'power1.inOut',
-                                    duration: 0.24,
-                                })
-                                // Projects -> Services / Skills: cruise on the LEFT
-                                .to(portraitActor, {
-                                    x: () => leftX() * 0.94,
-                                    y: () => window.innerHeight * 0.02,
-                                    scale: 0.65,
-                                    rotation: -1.4,
-                                    opacity: 0.52,
-                                    ease: 'none',
-                                    duration: 0.18,
-                                })
-                                // Education -> Contact: soften and ease right for contact readability
-                                .to(portraitActor, {
-                                    x: () => rightX() * 0.72,
-                                    y: () => window.innerHeight * 0.09,
-                                    scale: 0.58,
-                                    rotation: 1.2,
-                                    opacity: 0.28,
-                                    ease: 'power1.out',
-                                    duration: 0.20,
-                                });
-                        }
-
-                        if (ambientGlow && mainEl) {
-                            gsap.timeline({
-                                scrollTrigger: {
-                                    trigger: mainEl,
-                                    start: 'top top',
-                                    end: 'bottom bottom',
-                                    scrub: 1.4,
-                                    invalidateOnRefresh: true,
-                                },
-                            })
-                                .to(ambientGlow, { x: () => window.innerWidth * 0.24, y: () => window.innerHeight * 0.08, scale: 1.12, duration: 0.35 })
-                                .to(ambientGlow, { x: () => -window.innerWidth * 0.26, y: () => window.innerHeight * 0.18, scale: 1.2, duration: 0.35 })
-                                .to(ambientGlow, { x: 0, y: () => window.innerHeight * 0.06, scale: 0.95, duration: 0.30 });
-                        }
-
                         if (hero) {
                             const vectors = [
                                 { x: -34, y: -64, rot: -3 },
@@ -1271,12 +1396,7 @@
                                 { x: 32, y: 66, rot: 3 },
                             ];
                             const heroTl = gsap.timeline({
-                                scrollTrigger: {
-                                    trigger: hero,
-                                    start: 'top top',
-                                    end: 'bottom top',
-                                    scrub: 0.65,
-                                },
+                                scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom top', scrub: 0.65 },
                             });
                             heroTl.to('[data-hero-left]', { x: -42, y: -48, opacity: 0.18, ease: 'none', duration: 1 }, 0);
                             gsap.utils.toArray('[data-hero-exp]').forEach((card, i) => {
@@ -1286,24 +1406,7 @@
                         }
                     });
 
-                    // Mobile & Tablet (< 1024px): proportional Right -> Left choreography sized for narrow viewports
                     mm.add('(max-width: 1023px)', () => {
-                        const mRight = () => Math.min(window.innerWidth * 0.20, 120);
-                        const mLeft = () => -Math.min(window.innerWidth * 0.20, 120);
-                        if (portraitActor && mainEl) {
-                            gsap.timeline({
-                                scrollTrigger: {
-                                    trigger: mainEl,
-                                    start: 'top top',
-                                    end: 'bottom bottom',
-                                    scrub: 0.9,
-                                    invalidateOnRefresh: true,
-                                },
-                            })
-                                .to(portraitActor, { x: mRight, y: '4vh', scale: 0.82, opacity: 0.38, duration: 0.32 })
-                                .to(portraitActor, { x: mLeft, y: '6vh', scale: 0.78, opacity: 0.36, duration: 0.38 })
-                                .to(portraitActor, { x: 0, y: '10vh', scale: 0.70, opacity: 0.20, duration: 0.30 });
-                        }
                         if (hero) {
                             gsap.utils.toArray('[data-hero-exp]').forEach((card, i) => {
                                 gsap.to(card, {
@@ -1322,12 +1425,7 @@
                         gsap.to(dividerTrack, {
                             xPercent: -24,
                             ease: 'none',
-                            scrollTrigger: {
-                                trigger: dividerTrack.parentElement,
-                                start: 'top bottom',
-                                end: 'bottom top',
-                                scrub: 0.8,
-                            },
+                            scrollTrigger: { trigger: dividerTrack.parentElement, start: 'top bottom', end: 'bottom top', scrub: 0.8 },
                         });
                     }
 
@@ -1356,33 +1454,22 @@
                 const vectors = [{ x: -34, y: -64, rot: -3 }, { x: 26, y: -26, rot: 2.5 }, { x: -24, y: 28, rot: -2 }, { x: 32, y: 66, rot: 3 }];
                 const onFallbackScroll = () => {
                     const maxScroll = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
-                    const totalP = Math.min(1, Math.max(0, window.scrollY / maxScroll));
-                    const w = window.innerWidth;
-                    const maxShift = w >= 1024 ? Math.min(w * 0.27, 420) : Math.min(w * 0.2, 120);
-                    let px = 0, sc = 1, op = 0.95;
-                    if (totalP < 0.35) {
-                        const k = totalP / 0.35;
-                        px = maxShift * k;
-                        sc = 1 - 0.24 * k;
-                        op = 0.95 - 0.30 * k;
-                    } else if (totalP < 0.78) {
-                        const k = (totalP - 0.35) / 0.43;
-                        px = maxShift - maxShift * 2 * k;
-                        sc = 0.76 - 0.1 * k;
-                        op = 0.65 - 0.12 * k;
-                    } else {
-                        const k = (totalP - 0.78) / 0.22;
-                        px = -maxShift + maxShift * 1.65 * k;
-                        sc = 0.66 - 0.08 * k;
-                        op = 0.53 - 0.25 * k;
-                    }
-                    if (portraitActor) {
-                        portraitActor.style.transform = `translate3d(${px.toFixed(1)}px, 0, 0) scale(${sc.toFixed(3)})`;
-                        portraitActor.style.opacity = op.toFixed(2);
-                    }
+                    scrollState.progress = Math.min(1, Math.max(0, window.scrollY / maxScroll));
+
                     if (hero) {
                         const r = hero.getBoundingClientRect();
-                        const hp = Math.min(1, Math.max(0, -r.top / Math.max(r.height * 0.85, 1)));
+                        const hp = Math.min(1, Math.max(0, -r.top / Math.max(r.height * 0.78, 1)));
+                        if (portraitActor) {
+                            const shiftX = window.innerWidth >= 1024 ? Math.min(window.innerWidth * 0.14, 180) * hp : 0;
+                            portraitActor.style.transform = `translate3d(${shiftX.toFixed(1)}px, ${(-28 * hp).toFixed(1)}px, 0) scale(${(1 - 0.16 * hp).toFixed(3)})`;
+                            portraitActor.style.opacity = String(Math.max(0, 1 - hp * 1.15).toFixed(2));
+                            portraitActor.style.visibility = hp >= 0.9 ? 'hidden' : 'visible';
+                        }
+                        if (linesCanvas) {
+                            const lv = Math.min(1, Math.max(0, (hp - 0.2) / 0.65));
+                            scrollState.linesVisibility = lv;
+                            linesCanvas.style.opacity = lv.toFixed(2);
+                        }
                         if (leftEl) { leftEl.style.transform = `translate3d(${(-hp * 40).toFixed(1)}px, ${(-hp * 42).toFixed(1)}px, 0)`; leftEl.style.opacity = String(Math.max(0.2, 1 - hp * 0.78).toFixed(2)); }
                         expEls.forEach((c, i) => { const v = vectors[i % vectors.length]; c.style.transform = `translate3d(${(v.x * hp).toFixed(1)}px, ${(v.y * hp).toFixed(1)}px, 0) rotate(${(v.rot * hp).toFixed(2)}deg)`; c.style.opacity = String(Math.max(0.25, 1 - hp * 0.7).toFixed(2)); });
                     }
